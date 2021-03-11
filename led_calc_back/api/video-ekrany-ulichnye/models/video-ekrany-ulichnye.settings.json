@@ -16,6 +16,9 @@
     },
     "shablon": {
       "model": "shablony-kp"
+    },
+    "typeName": {
+      "model": "tipy-produkczii"
     }
   }
 }

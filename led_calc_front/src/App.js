@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import VARS from'./VARS.js';
+import { Query } from 'react-apollo';
+import { gql } from 'apollo-boost';
 import React from 'react';
 import './App.css';
 
@@ -8,6 +10,8 @@ function App() {
       <CalcForm />
     );
 }
+
+
 
 class CalcForm extends React.Component {
     constructor(props) {
@@ -26,6 +30,7 @@ class CalcForm extends React.Component {
         console.log('Вы выбрали' + this.state.value);
         event.preventDefault();
     }
+
     render() {
         return (
             <form onSubmit={this.handleSubmit}>

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "video_ekrany_interernye_s",
   "info": {
-    "name": "\"Видео Экраны Интерьерные\""
+    "name": "\"Видео Экраны Интерьерные\"",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,12 @@
   "attributes": {
     "ledName": {
       "type": "string"
+    },
+    "shablon": {
+      "model": "shablony-kp"
+    },
+    "typeName": {
+      "model": "tipy-produkczii"
     }
   }
 }

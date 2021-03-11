@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipy_produkczii_s",
+  "info": {
+    "name": "\"Типы Продукции\""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tapeName": {
+      "type": "string"
+    }
+  }
+}

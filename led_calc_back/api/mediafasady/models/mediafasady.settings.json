@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "mediafasady_s",
   "info": {
-    "name": "\"Медиафасады\""
+    "name": "\"Медиафасады\"",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,12 @@
   "attributes": {
     "ledName": {
       "type": "string"
+    },
+    "typeName": {
+      "model": "tipy-produkczii"
+    },
+    "shablon": {
+      "model": "shablony-kp"
     }
   }
 }
