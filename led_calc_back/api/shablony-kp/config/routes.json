@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/shablony-kps",
+      "handler": "shablony-kp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/shablony-kps/count",
+      "handler": "shablony-kp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/shablony-kps/:id",
+      "handler": "shablony-kp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/shablony-kps",
+      "handler": "shablony-kp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/shablony-kps/:id",
+      "handler": "shablony-kp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/shablony-kps/:id",
+      "handler": "shablony-kp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

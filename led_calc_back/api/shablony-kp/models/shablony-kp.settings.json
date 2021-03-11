@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shablony_kp_s",
+  "info": {
+    "name": "\"Шаблоны КП\""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cpName": {
+      "type": "string"
+    }
+  }
+}

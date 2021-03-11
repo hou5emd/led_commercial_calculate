@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/video-ekrany-interernyes",
+      "handler": "video-ekrany-interernye.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/video-ekrany-interernyes/count",
+      "handler": "video-ekrany-interernye.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/video-ekrany-interernyes/:id",
+      "handler": "video-ekrany-interernye.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/video-ekrany-interernyes",
+      "handler": "video-ekrany-interernye.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/video-ekrany-interernyes/:id",
+      "handler": "video-ekrany-interernye.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/video-ekrany-interernyes/:id",
+      "handler": "video-ekrany-interernye.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

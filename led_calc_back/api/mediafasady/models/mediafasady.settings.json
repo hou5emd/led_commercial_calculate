@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mediafasady_s",
+  "info": {
+    "name": "\"Медиафасады\""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ledName": {
+      "type": "string"
+    }
+  }
+}

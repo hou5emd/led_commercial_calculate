@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mediafasadies",
+      "handler": "mediafasady.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mediafasadies/count",
+      "handler": "mediafasady.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mediafasadies/:id",
+      "handler": "mediafasady.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mediafasadies",
+      "handler": "mediafasady.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mediafasadies/:id",
+      "handler": "mediafasady.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mediafasadies/:id",
+      "handler": "mediafasady.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
