@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
-import VARS from'./VARS.js';
+import { VARS } from'./VARS.js';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

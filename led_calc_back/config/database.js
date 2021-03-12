@@ -5,11 +5,11 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'mysql',
-        host: env('DATABASE_HOST', 'localhost'),
+        host: env('DATABASE_HOST', '92.53.96.132'),
         port: env('DATABASE_PORT', 3306),
-        database: env('DATABASE_NAME', 'led_calc'),
-        username: env('DATABASE_USERNAME', 'root'),
-        password: env('DATABASE_PASSWORD', ''),
+        database: env('DATABASE_NAME', 'cv94171_calcled'),
+        username: env('DATABASE_USERNAME', 'cv94171_calcled'),
+        password: env('DATABASE_PASSWORD', 'BcvGD5fm'),
       },
       options: {
         useNullAsDefault: true,
