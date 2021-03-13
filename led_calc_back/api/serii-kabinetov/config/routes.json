@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/serii-kabinetovs",
+      "handler": "serii-kabinetov.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/serii-kabinetovs/count",
+      "handler": "serii-kabinetov.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/serii-kabinetovs/:id",
+      "handler": "serii-kabinetov.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/serii-kabinetovs",
+      "handler": "serii-kabinetov.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/serii-kabinetovs/:id",
+      "handler": "serii-kabinetov.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/serii-kabinetovs/:id",
+      "handler": "serii-kabinetov.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

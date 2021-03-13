@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/led-modulis",
+      "handler": "led-moduli.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/led-modulis/count",
+      "handler": "led-moduli.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/led-modulis/:id",
+      "handler": "led-moduli.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/led-modulis",
+      "handler": "led-moduli.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/led-modulis/:id",
+      "handler": "led-moduli.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/led-modulis/:id",
+      "handler": "led-moduli.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "tipy_produkczii_s",
+  "collectionName": "serii_kabinetov_s",
   "info": {
-    "name": "\"Типы Продукции\"",
-    "description": ""
+    "name": "\"Серии кабинетов\""
   },
   "options": {
     "increments": true,
@@ -11,12 +10,12 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "tapeName": {
+    "modelCabinet": {
       "type": "string"
     },
     "ledModuli": {
-      "via": "typeOfProduct",
-      "collection": "led-moduli"
+      "via": "modelCabinet",
+      "model": "led-moduli"
     }
   }
 }

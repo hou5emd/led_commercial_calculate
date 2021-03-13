@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "led_moduli_s",
+  "info": {
+    "name": "\"Лед модули\"",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Model": {
+      "type": "string"
+    },
+    "ledStep": {
+      "type": "float"
+    },
+    "moduleWidth": {
+      "type": "integer"
+    },
+    "moduleHeight": {
+      "type": "integer"
+    },
+    "resolutionWidth": {
+      "type": "integer"
+    },
+    "resolutionHeight": {
+      "type": "integer"
+    },
+    "pixelConfig": {
+      "type": "string"
+    },
+    "ledManufacture": {
+      "type": "string"
+    },
+    "kandel": {
+      "type": "integer"
+    },
+    "powerInputModule": {
+      "type": "integer"
+    },
+    "powerInputMaxM2": {
+      "type": "integer"
+    },
+    "powerInputAverageM2": {
+      "type": "integer"
+    },
+    "refrashRateHertz": {
+      "type": "string"
+    },
+    "viewDistance": {
+      "type": "float"
+    },
+    "contrast": {
+      "type": "string"
+    },
+    "viewAngle": {
+      "type": "string"
+    },
+    "imageRefreshRate": {
+      "type": "string"
+    },
+    "temperature": {
+      "type": "string"
+    },
+    "quantityColors": {
+      "type": "string"
+    },
+    "photoModule": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "typeOfProduct": {
+      "model": "tipy-produkczii",
+      "via": "ledModuli"
+    },
+    "modelCabinet": {
+      "collection": "serii-kabinetov",
+      "via": "ledModuli"
+    },
+    "lifeTime": {
+      "type": "string"
+    }
+  }
+}
