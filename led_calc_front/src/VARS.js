@@ -8,8 +8,7 @@ import SelTapeProd from "./comp/tapeproduktion";
 const VARS = {
     URL: "http://192.168.100.6:1337/",
     client: '',
-    renderState: SelTapeProd,
-    renderCache: [],
+    renderStep: 1,
     typeOfProductID: ''
 
 };
