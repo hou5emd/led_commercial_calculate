@@ -5,6 +5,7 @@ import { SelTapeProd } from './comp/tapeproduktion'
 import './App.css';
 import { CalcStateContext } from'./comp/contexts';
 import ListModules from './comp/tepeoflednodule';
+import { SelCabinet } from './comp/tapeofcabinet'
 
 
 function App (){
@@ -21,6 +22,12 @@ function App (){
                                     break;
                                 case 2:
                                     return <ListModules />;
+                                    break;
+                                case 3:
+                                    return <SelCabinet />
+                                    break;
+                                case 4:
+                                    return <h1>Тут будет выбор до оборудования</h1>
                                     break;
                                 default:
                                     <p>Упс</p>

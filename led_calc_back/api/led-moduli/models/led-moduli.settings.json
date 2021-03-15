@@ -84,8 +84,8 @@
       "via": "ledModuli"
     },
     "modelCabinet": {
-      "collection": "serii-kabinetov",
-      "via": "ledModuli"
+      "via": "ledModuli",
+      "collection": "serii-kabinetov"
     },
     "lifeTime": {
       "type": "string"

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { VARS } from '../VARS.js';
-import './resptests';
+
 import { useQuery } from 'react-apollo';
 import { gql } from 'apollo-boost';
 import {parseJSON, checkStatus} from "./resptests";
+import {CalcStateContext} from "./contexts";
 
 
 
@@ -14,7 +15,18 @@ class ListModules extends React.Component {
 
     }
 
+    static contextType  = CalcStateContext;
+
+    getLedModule = (e) => {
+        const [context, setContext] = this.context;
+        let moduleKey = e.target.value;
+        console.log(moduleKey);
+        VARS.module = this.state.requestList[moduleKey];
+        console.log(VARS.module);
+        setContext(3);
+    }
     async componentDidMount() {
+
         try {
             const requestList = await fetch(VARS.URL + 'led-modulis?_where[typeOfProduct]?id=' + VARS.typeOfProductID, {
                 headers: {
@@ -35,20 +47,14 @@ class ListModules extends React.Component {
 
     }
 
-    getLedModule = (e) => {
-        let moduleSel = e.target;
-        let moduleKey = moduleSel.getAttribute("arrid");
-        console.log(moduleKey);
-        VARS.module = this.state.requestList[moduleKey];
-        console.log(VARS.module);
-    }
+
     render() {
         if (this.state.download){
             return <div>Заргузка данных....</div>
         }
 
         const selListModule = this.state.requestList.map((item, key) =>
-            <option value={item.id} arrid={key} >{item.Model}</option>
+            <option value={key} >{item.Model}</option>
         );
         console.log(this.state.requestList);
         return (
@@ -59,9 +65,7 @@ class ListModules extends React.Component {
 
         )
     }
-    constructor() {
-        super();
-    }
+
 
 
 

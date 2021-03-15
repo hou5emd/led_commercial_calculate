@@ -2,20 +2,46 @@
   "kind": "collectionType",
   "collectionName": "serii_kabinetov_s",
   "info": {
-    "name": "\"Серии кабинетов\""
+    "name": "\"Серии кабинетов\"",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "modelCabinet": {
       "type": "string"
     },
     "ledModuli": {
-      "via": "modelCabinet",
-      "model": "led-moduli"
+      "model": "led-moduli",
+      "via": "modelCabinet"
+    },
+    "price": {
+      "type": "float"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "tapeOfService": {
+      "type": "string"
+    },
+    "stepProtection": {
+      "type": "string"
+    },
+    "nameToProp": {
+      "type": "string"
+    },
+    "shablon": {
+      "model": "shablony-kp",
+      "via": "tapeCabinets"
     }
   }
 }

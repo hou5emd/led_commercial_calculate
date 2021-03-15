@@ -9,7 +9,8 @@ const VARS = {
     URL: "http://192.168.100.6:1337/",
     client: '',
     typeOfProductID: '',
-    module: {}
+    module: {},
+    cabinet:{}
 
 
 };

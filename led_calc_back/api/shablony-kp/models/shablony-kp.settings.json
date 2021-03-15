@@ -12,6 +12,10 @@
   "attributes": {
     "cpName": {
       "type": "string"
+    },
+    "tapeCabinets": {
+      "via": "shablon",
+      "collection": "serii-kabinetov"
     }
   }
 }

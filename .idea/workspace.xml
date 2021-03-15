@@ -11,9 +11,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start...">
+      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeofcabinet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/mediafasady/config/routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/mediafasady/controllers/mediafasady.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/mediafasady/models/mediafasady.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/mediafasady/models/mediafasady.settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/mediafasady/services/mediafasady.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/tip-razmeshheniya-modulya/config/routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/tip-razmeshheniya-modulya/controllers/tip-razmeshheniya-modulya.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/tip-razmeshheniya-modulya/models/tip-razmeshheniya-modulya.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/tip-razmeshheniya-modulya/models/tip-razmeshheniya-modulya.settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/tip-razmeshheniya-modulya/services/tip-razmeshheniya-modulya.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-interernye/config/routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-interernye/controllers/video-ekrany-interernye.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-interernye/models/video-ekrany-interernye.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-interernye/models/video-ekrany-interernye.settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-interernye/services/video-ekrany-interernye.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-ulichnye/config/routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-ulichnye/controllers/video-ekrany-ulichnye.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-ulichnye/models/video-ekrany-ulichnye.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-ulichnye/models/video-ekrany-ulichnye.settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/video-ekrany-ulichnye/services/video-ekrany-ulichnye.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +78,7 @@
       <updated>1615481633486</updated>
       <workItem from="1615481634947" duration="12273000" />
       <workItem from="1615619758187" duration="852000" />
-      <workItem from="1615620630900" duration="56396000" />
+      <workItem from="1615620630900" duration="67296000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
