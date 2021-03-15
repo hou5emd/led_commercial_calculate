@@ -11,10 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start...">
-      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/contexts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/resptests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" afterDir="false" />
@@ -57,7 +54,7 @@
       <updated>1615481633486</updated>
       <workItem from="1615481634947" duration="12273000" />
       <workItem from="1615619758187" duration="852000" />
-      <workItem from="1615620630900" duration="53674000" />
+      <workItem from="1615620630900" duration="56396000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>

@@ -27,7 +27,6 @@ export function SelTapeProd (){
         console.log(context);
         VARS.typeOfProductID = e.target.value;
         console.log(VARS.typeOfProductID);
-        VARS.renderStep += 1;
         setContext(2);
     }
 
