@@ -2,8 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #565656;
 }
 .d-none{
   display: none;
   transition: all .6s;
+}
+#root{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: center;
+  justify-content: center;
+}
+select {
+  height: 56px;
+  width: fit-content;
+  padding: 0 20px;
+  margin: auto;
+  color: inherit;
+  border: 1px solid #c9c9ca;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  background: transparent;
 }
