@@ -6,6 +6,7 @@ import './App.css';
 import { CalcStateContext } from'./comp/contexts';
 import ListModules from './comp/tepeoflednodule';
 import { SelCabinet } from './comp/tapeofcabinet'
+import { ScreenSize } from './comp/screensize';
 
 
 function App (){
@@ -27,7 +28,7 @@ function App (){
                                     return <SelCabinet />
                                     break;
                                 case 4:
-                                    return <h1>Тут будет выбор до оборудования</h1>
+                                    return <ScreenSize />
                                     break;
                                 default:
                                     <p>Упс</p>

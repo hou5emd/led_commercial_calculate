@@ -15,7 +15,14 @@
   vertical-align: center;
   justify-content: center;
 }
-select {
+label{
+  width: fit-content;
+  flex-direction: column;
+  display: flex;
+  align-items: start;
+  
+}
+select, input {
   height: 56px;
   width: fit-content;
   padding: 0 20px;
@@ -26,4 +33,19 @@ select {
   font-weight: 600;
   font-size: 18px;
   background: transparent;
+}
+
+label>input{
+  margin-left: 0;
+}
+div.screen-size{
+  margin: auto;
+  height: fit-content;
+}
+div.screen-size>label>input{
+  margin-top: 16px;
+}
+div.screen-size>label:first-child{
+  margin-bottom: 32px;
+
 }
