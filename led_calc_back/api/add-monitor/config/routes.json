@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/add-monitors",
+      "handler": "add-monitor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-monitors/count",
+      "handler": "add-monitor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-monitors/:id",
+      "handler": "add-monitor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add-monitors",
+      "handler": "add-monitor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/add-monitors/:id",
+      "handler": "add-monitor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/add-monitors/:id",
+      "handler": "add-monitor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

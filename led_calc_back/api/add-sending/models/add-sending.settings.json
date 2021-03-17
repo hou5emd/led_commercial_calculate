@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "shablony_kp_s",
+  "collectionName": "add_sendings",
   "info": {
-    "name": "\"Шаблоны КП экраны\"",
+    "name": "\"ДОП. ОБОР. Отправляшки\"",
     "description": ""
   },
   "options": {
@@ -11,12 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "cpName": {
+    "sendControllerName": {
       "type": "string"
     },
-    "tapeCabinets": {
-      "collection": "serii-kabinetov",
-      "via": "shablon"
+    "price": {
+      "type": "float"
     }
   }
 }

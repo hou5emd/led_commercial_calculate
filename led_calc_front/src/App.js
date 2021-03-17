@@ -30,6 +30,9 @@ function App (){
                                 case 4:
                                     return <ScreenSize />
                                     break;
+                                case 5:
+                                    return <h1>5 стадия</h1>
+                                    break;
                                 default:
                                     <p>Упс</p>
                             }

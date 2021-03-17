@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/add-video-procs",
+      "handler": "add-video-proc.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-video-procs/count",
+      "handler": "add-video-proc.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-video-procs/:id",
+      "handler": "add-video-proc.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add-video-procs",
+      "handler": "add-video-proc.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/add-video-procs/:id",
+      "handler": "add-video-proc.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/add-video-procs/:id",
+      "handler": "add-video-proc.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

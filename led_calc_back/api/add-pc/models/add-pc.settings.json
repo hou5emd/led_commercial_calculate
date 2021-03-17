@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "shablony_kp_s",
+  "collectionName": "add_pcs",
   "info": {
-    "name": "\"Шаблоны КП экраны\"",
+    "name": "\"ДОП. ОБОР. Компы\"",
     "description": ""
   },
   "options": {
@@ -11,12 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "cpName": {
+    "pcName": {
       "type": "string"
     },
-    "tapeCabinets": {
-      "collection": "serii-kabinetov",
-      "via": "shablon"
+    "price": {
+      "type": "float"
     }
   }
 }

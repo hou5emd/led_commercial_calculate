@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "add_monitors",
+  "info": {
+    "name": "addMonitor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "monitorName": {
+      "type": "string"
+    },
+    "price": {
+      "type": "float"
+    }
+  }
+}

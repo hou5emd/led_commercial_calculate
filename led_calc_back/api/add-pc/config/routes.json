@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/add-pcs",
+      "handler": "add-pc.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-pcs/count",
+      "handler": "add-pc.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-pcs/:id",
+      "handler": "add-pc.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add-pcs",
+      "handler": "add-pc.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/add-pcs/:id",
+      "handler": "add-pc.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/add-pcs/:id",
+      "handler": "add-pc.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

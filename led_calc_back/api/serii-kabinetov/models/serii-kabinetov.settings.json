@@ -40,8 +40,8 @@
       "type": "string"
     },
     "shablon": {
-      "model": "shablony-kp",
-      "via": "tapeCabinets"
+      "via": "tapeCabinets",
+      "model": "shablony-kp"
     }
   }
 }

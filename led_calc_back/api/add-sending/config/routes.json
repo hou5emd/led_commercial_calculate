@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/add-sendings",
+      "handler": "add-sending.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-sendings/count",
+      "handler": "add-sending.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/add-sendings/:id",
+      "handler": "add-sending.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add-sendings",
+      "handler": "add-sending.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/add-sendings/:id",
+      "handler": "add-sending.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/add-sendings/:id",
+      "handler": "add-sending.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
