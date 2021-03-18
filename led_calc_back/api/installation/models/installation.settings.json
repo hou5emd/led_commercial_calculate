@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "add_monitors",
+  "collectionName": "installations",
   "info": {
-    "name": "ДОП. ОБОР. Мониторы",
+    "name": "\"Цены монтажа\"",
     "description": ""
   },
   "options": {
@@ -11,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "monitorName": {
+    "installationTape": {
       "type": "string"
     },
     "price": {
