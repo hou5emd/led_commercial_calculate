@@ -16,6 +16,9 @@
     },
     "price": {
       "type": "float"
+    },
+    "priceUp": {
+      "type": "integer"
     }
   }
 }

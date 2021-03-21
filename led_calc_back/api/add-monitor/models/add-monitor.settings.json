@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "add_monitors",
   "info": {
-    "name": "ДОП. ОБОР. Мониторы",
+    "name": "\"ДОП. ОБОР. Мониторы\"",
     "description": ""
   },
   "options": {
@@ -16,6 +16,10 @@
     },
     "price": {
       "type": "float"
+    },
+    "priceUp": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

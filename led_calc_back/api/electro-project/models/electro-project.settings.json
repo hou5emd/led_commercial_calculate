@@ -1,17 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "installations",
+  "collectionName": "electro_projects",
   "info": {
-    "name": "\"Цены монтажа\"",
+    "name": "\"Электро проекты\"",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
-    "installationTape": {
+    "tapeElectroProject": {
       "type": "string"
     },
     "price": {

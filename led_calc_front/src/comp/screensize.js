@@ -20,7 +20,7 @@ export function ScreenSize() {
         VARS.screenSizeWidth = VARS.screenCabinetWidth*VARS.cabinet.width;  //Расчет ширины в мм
         VARS.screenSizeHeight = VARS.screenCabinetHeigth*VARS.cabinet.height; //Расчет высоты  в мм
         VARS.cabinetSumm = VARS.screenCabinetWidth*VARS.screenCabinetHeigth; //Сумма кабинетов
-        VARS.priceInWork = Math.round(VARS.cabinetSumm * VARS.cabinet.price * VARS.usdrub); //Цена экрана в рублях без доп оборудования
+        VARS.priceInWork = Math.round(VARS.cabinetSumm * VARS.cabinet.price * VARS.usdrub / 100 * (100 + VARS.cabinet.priceUp)); //Цена экрана в рублях без доп оборудования
         console.log("Размер экр ", VARS.screenSizeWidth,"ш x ", VARS.screenSizeHeight, "в. Количество кабинетов: ", VARS.cabinetSumm, "Цена в рублях: ", VARS.priceInWork);
         setContext(5);
     }

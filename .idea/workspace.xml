@@ -12,9 +12,23 @@
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-monitor/documentation/1.0.0/add-monitor.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-monitor/documentation/1.0.0/add-monitor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-monitor/models/add-monitor.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-monitor/models/add-monitor.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-pc/documentation/1.0.0/add-pc.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-pc/documentation/1.0.0/add-pc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-pc/models/add-pc.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-pc/models/add-pc.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/documentation/1.0.0/add-video-proc.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/documentation/1.0.0/add-video-proc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/models/add-video-proc.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/models/add-video-proc.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/installation/documentation/1.0.0/installation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/installation/documentation/1.0.0/installation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/installation/models/installation.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/installation/models/installation.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/documentation/1.0.0/shablony-kp.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/documentation/1.0.0/shablony-kp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +71,8 @@
       <workItem from="1615620630900" duration="71609000" />
       <workItem from="1615914464767" duration="7424000" />
       <workItem from="1616077284827" duration="3653000" />
-      <workItem from="1616233847853" duration="3189000" />
+      <workItem from="1616233847853" duration="3190000" />
+      <workItem from="1616315083080" duration="5437000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>

@@ -730,6 +730,9 @@
                 "shablon": {
                   "type": "string"
                 },
+                "priceUp": {
+                  "type": "number"
+                },
                 "created_by": {
                   "type": "string"
                 },

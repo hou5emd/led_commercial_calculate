@@ -541,6 +541,9 @@
           "price": {
             "type": "number"
           },
+          "priceUp": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -554,6 +557,9 @@
           },
           "price": {
             "type": "number"
+          },
+          "priceUp": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

@@ -1,17 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "installations",
+  "collectionName": "electro_boxes",
   "info": {
-    "name": "\"Цены монтажа\"",
+    "name": "\"Электро щит с автоматами\"",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
-    "installationTape": {
+    "electroBoxName": {
       "type": "string"
     },
     "price": {

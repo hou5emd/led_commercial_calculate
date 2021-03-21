@@ -1,25 +1,25 @@
 {
   "kind": "collectionType",
-  "collectionName": "installations",
+  "collectionName": "admin_agreements",
   "info": {
-    "name": "\"Цены монтажа\"",
+    "name": "\"Админ. согласование\"",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
-    "installationTape": {
+    "tapeAgreement": {
       "type": "string"
     },
     "price": {
       "type": "float"
     },
     "priceUp": {
-      "type": "integer",
-      "default": 0
+      "default": 0,
+      "type": "integer"
     }
   }
 }

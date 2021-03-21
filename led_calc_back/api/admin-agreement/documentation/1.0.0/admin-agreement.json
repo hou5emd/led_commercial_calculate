@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/shablony-kps": {
+    "/admin-agreements": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Shablony-kp"
+          "Admin-agreement"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Shablony-kp"
+          "Admin-agreement"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewShablony-kp"
+                "$ref": "#/components/schemas/NewAdmin-agreement"
               }
             }
           }
         }
       }
     },
-    "/shablony-kps/count": {
+    "/admin-agreements/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Shablony-kp"
+          "Admin-agreement"
         ],
         "parameters": []
       }
     },
-    "/shablony-kps/{id}": {
+    "/admin-agreements/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Shablony-kp"
+          "Admin-agreement"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Shablony-kp"
+          "Admin-agreement"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewShablony-kp"
+                "$ref": "#/components/schemas/NewAdmin-agreement"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Shablony-kp"
+          "Admin-agreement"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Shablony-kp": {
+      "Admin-agreement": {
         "required": [
           "id"
         ],
@@ -535,81 +535,29 @@
           "id": {
             "type": "string"
           },
-          "cpName": {
+          "tapeAgreement": {
             "type": "string"
           },
-          "tapeCabinets": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "modelCabinet": {
-                  "type": "string"
-                },
-                "ledModuli": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "number"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "weight": {
-                  "type": "integer"
-                },
-                "tapeOfService": {
-                  "type": "string"
-                },
-                "stepProtection": {
-                  "type": "string"
-                },
-                "nameToProp": {
-                  "type": "string"
-                },
-                "shablon": {
-                  "type": "string"
-                },
-                "priceUp": {
-                  "type": "number"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "price": {
+            "type": "number"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "priceUp": {
+            "type": "integer",
+            "default": 0
           }
         }
       },
-      "NewShablony-kp": {
+      "NewAdmin-agreement": {
         "properties": {
-          "cpName": {
+          "tapeAgreement": {
             "type": "string"
           },
-          "tapeCabinets": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "price": {
+            "type": "number"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "priceUp": {
+            "type": "integer",
+            "default": 0
           },
           "created_by": {
             "type": "string"

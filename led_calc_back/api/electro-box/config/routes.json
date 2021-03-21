@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/electro-boxes",
+      "handler": "electro-box.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/electro-boxes/count",
+      "handler": "electro-box.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/electro-boxes/:id",
+      "handler": "electro-box.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/electro-boxes",
+      "handler": "electro-box.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/electro-boxes/:id",
+      "handler": "electro-box.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/electro-boxes/:id",
+      "handler": "electro-box.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

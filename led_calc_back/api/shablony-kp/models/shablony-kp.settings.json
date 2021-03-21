@@ -15,8 +15,8 @@
       "type": "string"
     },
     "tapeCabinets": {
-      "collection": "serii-kabinetov",
-      "via": "shablon"
+      "via": "shablon",
+      "collection": "serii-kabinetov"
     }
   }
 }

@@ -677,6 +677,9 @@
                 "type": "string"
               }
             }
+          },
+          "priceUp": {
+            "type": "number"
           }
         }
       },
@@ -711,6 +714,9 @@
           },
           "shablon": {
             "type": "string"
+          },
+          "priceUp": {
+            "type": "number"
           },
           "created_by": {
             "type": "string"

@@ -1,23 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "installations",
+  "collectionName": "project_constrs",
   "info": {
-    "name": "\"Цены монтажа\"",
+    "name": "\"Проект конструкторской части\"",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
-    "installationTape": {
+    "projectConstrName": {
       "type": "string"
     },
     "price": {
       "type": "float"
     },
-    "priceUp": {
+    "proceUp": {
       "type": "integer",
       "default": 0
     }

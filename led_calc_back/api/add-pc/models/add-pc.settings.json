@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "pcName": {
@@ -16,6 +16,10 @@
     },
     "price": {
       "type": "float"
+    },
+    "priceUp": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

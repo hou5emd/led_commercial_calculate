@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/electro-projects",
+      "handler": "electro-project.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/electro-projects/count",
+      "handler": "electro-project.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/electro-projects/:id",
+      "handler": "electro-project.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/electro-projects",
+      "handler": "electro-project.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/electro-projects/:id",
+      "handler": "electro-project.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/electro-projects/:id",
+      "handler": "electro-project.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
