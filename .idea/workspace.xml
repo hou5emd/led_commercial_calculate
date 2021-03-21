@@ -10,7 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start..." />
+    <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +56,8 @@
       <workItem from="1615619758187" duration="852000" />
       <workItem from="1615620630900" duration="71609000" />
       <workItem from="1615914464767" duration="7424000" />
+      <workItem from="1616077284827" duration="3653000" />
+      <workItem from="1616233847853" duration="3189000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>

@@ -29,7 +29,7 @@ async function usdrub(){
 usdrub();
 
 const VARS = {
-    URL: "http://192.168.0.42:1337/",
+    URL: "http://192.168.100.6:1337/",
     client: '',
     usdrub:null, //Курс доллара
     typeOfProductID: '', //Тип продукции
