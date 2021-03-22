@@ -744,6 +744,10 @@
           },
           "lifeTime": {
             "type": "string"
+          },
+          "ledStepHeight": {
+            "type": "number",
+            "default": 0
           }
         }
       },
@@ -817,6 +821,10 @@
           },
           "lifeTime": {
             "type": "string"
+          },
+          "ledStepHeight": {
+            "type": "number",
+            "default": 0
           },
           "created_by": {
             "type": "string"

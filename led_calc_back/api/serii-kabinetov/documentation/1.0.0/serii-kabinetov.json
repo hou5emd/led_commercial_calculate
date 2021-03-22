@@ -621,6 +621,9 @@
               "lifeTime": {
                 "type": "string"
               },
+              "ledStepHeight": {
+                "type": "number"
+              },
               "created_by": {
                 "type": "string"
               },

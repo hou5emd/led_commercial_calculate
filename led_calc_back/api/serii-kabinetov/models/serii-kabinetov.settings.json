@@ -15,8 +15,8 @@
       "type": "string"
     },
     "ledModuli": {
-      "model": "led-moduli",
-      "via": "modelCabinet"
+      "via": "modelCabinet",
+      "model": "led-moduli"
     },
     "price": {
       "type": "float"

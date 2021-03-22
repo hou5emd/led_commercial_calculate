@@ -84,11 +84,15 @@
       "via": "ledModuli"
     },
     "modelCabinet": {
-      "via": "ledModuli",
-      "collection": "serii-kabinetov"
+      "collection": "serii-kabinetov",
+      "via": "ledModuli"
     },
     "lifeTime": {
       "type": "string"
+    },
+    "ledStepHeight": {
+      "type": "float",
+      "default": 0
     }
   }
 }

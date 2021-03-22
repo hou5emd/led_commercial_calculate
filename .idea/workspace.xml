@@ -11,24 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start...">
+      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-monitor/documentation/1.0.0/add-monitor.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-monitor/documentation/1.0.0/add-monitor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-monitor/models/add-monitor.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-monitor/models/add-monitor.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-pc/documentation/1.0.0/add-pc.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-pc/documentation/1.0.0/add-pc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-pc/models/add-pc.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-pc/models/add-pc.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/documentation/1.0.0/add-video-proc.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/documentation/1.0.0/add-video-proc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/models/add-video-proc.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-video-proc/models/add-video-proc.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/installation/documentation/1.0.0/installation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/installation/documentation/1.0.0/installation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/installation/models/installation.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/installation/models/installation.settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/documentation/1.0.0/shablony-kp.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/documentation/1.0.0/shablony-kp.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/tipy-produkczii/documentation/1.0.0/tipy-produkczii.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/tipy-produkczii/documentation/1.0.0/tipy-produkczii.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +51,16 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="testPDF.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" working-dir="$PROJECT_DIR$/led_calc_front/src/comp">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.testPDF.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +75,8 @@
       <workItem from="1615914464767" duration="7424000" />
       <workItem from="1616077284827" duration="3653000" />
       <workItem from="1616233847853" duration="3190000" />
-      <workItem from="1616315083080" duration="5437000" />
+      <workItem from="1616315083080" duration="5438000" />
+      <workItem from="1616400543364" duration="13584000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
@@ -112,6 +116,22 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="659" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1615661387569" />
+    <state width="1837" height="295" key="GridCell.Tab.0.bottom" timestamp="1616439275835">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1616439275835" />
+    <state width="1837" height="295" key="GridCell.Tab.0.center" timestamp="1616439275835">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1616439275835" />
+    <state width="1837" height="295" key="GridCell.Tab.0.left" timestamp="1616439275835">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1616439275835" />
+    <state width="1837" height="295" key="GridCell.Tab.0.right" timestamp="1616439275835">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1837" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1616439275835" />
     <state x="430" y="185" key="SettingsEditor" timestamp="1615621927674">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

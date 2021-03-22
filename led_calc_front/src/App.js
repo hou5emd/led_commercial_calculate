@@ -7,6 +7,8 @@ import { CalcStateContext } from'./comp/contexts';
 import ListModules from './comp/tepeoflednodule';
 import { SelCabinet } from './comp/tapeofcabinet'
 import { ScreenSize } from './comp/screensize';
+import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer'
+import { MyDocument } from './comp/testPDF'
 
 
 function App (){
@@ -31,7 +33,13 @@ function App (){
                                     return <ScreenSize />
                                     break;
                                 case 5:
-                                    return <h1>5 стадия</h1>
+                                    return (
+                                        <div>
+                                            <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
+                                                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
+                                            </PDFDownloadLink>
+                                        </div>
+                                    )
                                     break;
                                 default:
                                     <p>Упс</p>

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/21/2021 9:33:09 PM"
+    "x-generation-date": "03/22/2021 6:24:39 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9640,6 +9640,10 @@
           },
           "lifeTime": {
             "type": "string"
+          },
+          "ledStepHeight": {
+            "type": "number",
+            "default": 0
           }
         }
       },
@@ -9713,6 +9717,10 @@
           },
           "lifeTime": {
             "type": "string"
+          },
+          "ledStepHeight": {
+            "type": "number",
+            "default": 0
           },
           "created_by": {
             "type": "string"
@@ -9855,6 +9863,9 @@
               },
               "lifeTime": {
                 "type": "string"
+              },
+              "ledStepHeight": {
+                "type": "number"
               },
               "created_by": {
                 "type": "string"
@@ -10148,6 +10159,9 @@
                 },
                 "lifeTime": {
                   "type": "string"
+                },
+                "ledStepHeight": {
+                  "type": "number"
                 },
                 "created_by": {
                   "type": "string"
