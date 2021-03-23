@@ -10,18 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start...">
-      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
+    <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/tipy-produkczii/documentation/1.0.0/tipy-produkczii.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/tipy-produkczii/documentation/1.0.0/tipy-produkczii.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +68,7 @@
       <workItem from="1616077284827" duration="3653000" />
       <workItem from="1616233847853" duration="3190000" />
       <workItem from="1616315083080" duration="5438000" />
-      <workItem from="1616400543364" duration="13584000" />
+      <workItem from="1616400543364" duration="35002000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
@@ -85,7 +77,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615490650961</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Start pdf render">
+      <created>1616448556685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616448556685</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Start pdf render">
+      <created>1616448569992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616448569992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +111,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Start..." />
+    <MESSAGE value="Start pdf render" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start pdf render" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615622390762">
@@ -136,10 +143,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="430" y="185" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1615621927674" />
-    <state x="712" y="254" key="Vcs.Push.Dialog.v2" timestamp="1615490668138">
+    <state x="712" y="254" key="Vcs.Push.Dialog.v2" timestamp="1616448582990">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="712" y="254" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1615490668138" />
+    <state x="712" y="254" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1616448582990" />
     <state x="636" y="139" width="585" height="801" key="find.popup" timestamp="1615811152400">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

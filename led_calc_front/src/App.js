@@ -20,7 +20,7 @@ function App (){
                     <CalcStateContext.Consumer>
                         {([context]) => {
                             switch (context){
-                                case 1:
+                                case 5:
                                     return <SelTapeProd />;
                                     break;
                                 case 2:
@@ -32,7 +32,7 @@ function App (){
                                 case 4:
                                     return <ScreenSize />
                                     break;
-                                case 5:
+                                case 1:
                                     return (
                                         <div>
                                             <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
