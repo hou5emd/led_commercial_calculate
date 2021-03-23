@@ -12,8 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <workItem from="1616077284827" duration="3653000" />
       <workItem from="1616233847853" duration="3190000" />
       <workItem from="1616315083080" duration="5438000" />
-      <workItem from="1616400543364" duration="35002000" />
+      <workItem from="1616400543364" duration="35413000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
