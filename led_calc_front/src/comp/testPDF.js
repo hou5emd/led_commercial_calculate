@@ -1,4 +1,5 @@
 import React from 'react';
+import { VARS, numberWithSpacesInt, numberWithSpacesFloat} from '../VARS'
 import { Page, Text, View, Document, Image, StyleSheet, Font  } from '@react-pdf/renderer';
 import gilroyLight from './font/Gilroy-Light.ttf'
 import circeNormal from './font/Circe-Regular.ttf'
@@ -88,7 +89,7 @@ export const MyDocument = () => (
         <Page size="A4" orientation="landscape" >
             <View >
                 <Image src="http://localhost:1337/uploads/A4_1_310b018592.png" style={styles.pageBG} />
-                <Text style={styles.text_1page}> 10000x6000 мм</Text>
+                <Text style={styles.text_1page}>{numberWithSpacesInt(VARS.screenSizeWidth)} x {numberWithSpacesInt(VARS.screenSizeHeight)} мм</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
@@ -96,26 +97,26 @@ export const MyDocument = () => (
                 <Image src="http://localhost:1337/uploads/A4_2_ca8b240d53.png" style={styles.pageBG} />
                 <Image src="http://localhost:1337/uploads/MF_P06h12_SMD_Showledtech_1000_1000_a6880d081c.jpg" style={styles.imgModule} />
                 <Image src="http://localhost:1337/uploads/MF_P07h15_SMD_prozrachnost_50_Showledtech_1000_1000_7ec36749ff.jpg" style={styles.imgCabinet} />
-                <Text style={styles.pixelStep}>3</Text>
-                <Text style={styles.moduleSize}>192 x 192</Text>
-                <Text style={styles.moduleResolution}>64 x 64</Text>
-                <Text style={styles.pixelConfig}>SMD2020</Text>
-                <Text style={styles.ledManufacture}>Klight</Text>
-                <Text style={styles.ledLifeTime}>100 000</Text>
-                <Text style={styles.refreshRateHertz}>1920</Text>
-                <Text style={styles.cabinetSize}>640x640</Text>
-                <Text style={styles.tapeOfService}>Фронтальное</Text>
-                <Text style={styles.cabinetWeight}>19</Text>
-                <Text style={styles.wattMaxM2}>540</Text>
-                <Text style={styles.wattAverM2}>290</Text>
-                <Text style={styles.contrast}>5000:1</Text>
-                <Text style={styles.ipWarranty}>ip 65</Text>
+                <Text style={styles.pixelStep}>{(VARS.module.ledStepHeight > 0) ? VARS.module.ledStep + 'x' + VARS.module.ledStepHeight:VARS.module.ledStep}</Text>
+                <Text style={styles.moduleSize}>{VARS.module.moduleWidth}x{VARS.module.moduleHeight}</Text>
+                <Text style={styles.moduleResolution}>{VARS.module.resolutionWidth}x{VARS.module.resolutionHeight}</Text>
+                <Text style={styles.pixelConfig}>{VARS.module.pixelConfig}</Text>
+                <Text style={styles.ledManufacture}>{VARS.module.ledManufacture}</Text>
+                <Text style={styles.ledLifeTime}>{VARS.module.lifeTime}</Text>
+                <Text style={styles.refreshRateHertz}>{VARS.module.refrashRateHertz}</Text>
+                <Text style={styles.cabinetSize}>{(VARS.module.moduleHeight == VARS.cabinet.height)?"-":VARS.cabinet.width + "x" + VARS.cabinet.height}</Text>
+                <Text style={styles.tapeOfService}>{VARS.cabinet.tapeOfService}</Text>
+                <Text style={styles.cabinetWeight}>{VARS.cabinet.weight}</Text>
+                <Text style={styles.wattMaxM2}>{VARS.module.powerInputMaxM2}</Text>
+                <Text style={styles.wattAverM2}>{VARS.module.powerInputAverageM2}</Text>
+                <Text style={styles.contrast}>{VARS.module.contrast}</Text>
+                <Text style={styles.ipWarranty}>{VARS.cabinet.stepProtection}</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
                 <Image src="http://localhost:1337/uploads/A4_3_ba3f9c7cf6.png" style={styles.pageBG} />
-                <Text style={styles.screenSize}>10000 x 6000</Text>
+                <Text style={styles.screenSize}>{VARS.screenSizeWidth} x {VARS.screenSizeHeight}</Text>
                 <Text style={styles.screenResolution}>1200 x 720</Text>
                 <Text style={styles.cabinetSumm}>135</Text>
                 <Text style={styles.screenWeight}>1200</Text>

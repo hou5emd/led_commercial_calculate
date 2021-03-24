@@ -22,14 +22,14 @@ async function usdrub(){
 
 
     } catch {
-
+        alert('Проблема с загрузкой курса Доллара');
     }
 
 }
 usdrub();
 
 const VARS = {
-    URL: "http://192.168.100.6:1337/",
+    URL: "http://localhost:1337/",
     client: '',
     usdrub:null, //Курс доллара
     typeOfProductID: '', //Тип продукции
@@ -53,4 +53,14 @@ VARS.client = new ApolloClient({
     uri: VARS.URL + 'graphql',
 
 });
-export {VARS};
+
+function numberWithSpacesInt(x) {
+    
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+function numberWithSpacesFloat(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return parts.join(".");
+}
+export {VARS,numberWithSpacesInt,numberWithSpacesFloat};
