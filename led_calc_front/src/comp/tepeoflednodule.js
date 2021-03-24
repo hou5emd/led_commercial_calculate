@@ -18,19 +18,29 @@ class ListModules extends React.Component {
     static contextType  = CalcStateContext;
 
     getLedModule = (e) => {
-        const [context, setContext] = this.context;
+        //const [context, setContext] = this.context;
         let moduleKey = e.target.value;
         console.log(moduleKey);
         VARS.module = this.state.requestList[moduleKey];
         console.log(VARS.module);
-        setContext(3);
+        //setContext(3);
     }
+    nextStep = () => {
+            const [context, setContext] = this.context;
+            if (VARS.module.id >= 0) {
+                setContext(3);
+            } else {
+                alert("Вы ничего не выбрали")
+            }
+        }
+
     async componentDidMount() {
 
         try {
             const requestList = await fetch(VARS.URL + 'led-modulis?_where[typeOfProduct]?id=' + VARS.typeOfProductID, {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjE2MDg1NDUwLCJleHAiOjE2MTg2Nzc0NTB9.S3iICAYvJlQvcuvzg42mQbqdvCfO4i0qQozz2iFszT4"
                 }
             })
                 .then(checkStatus)
@@ -49,6 +59,7 @@ class ListModules extends React.Component {
 
 
     render() {
+
         if (this.state.download){
             return <div>Заргузка данных....</div>
         }
@@ -58,10 +69,17 @@ class ListModules extends React.Component {
         );
         console.log(this.state.requestList);
         return (
-            <select onChange={(e) => {this.getLedModule(e)}}>
-                <option disabled={true} selected>Выберите модуль</option>
-                {selListModule}
-            </select>
+            <div className={'screen-size'}>
+                <select onChange={(e) => {this.getLedModule(e)}}>
+                    <option disabled={true} selected>Выберите модуль</option>
+                    {selListModule}
+                </select>
+                <button onClick={() => {
+                    const [context, setContext] = this.context;
+                    setContext(context-1);
+                }}>Шаг назад</button>
+                <button onClick={this.nextStep}>Следующий шаг</button>
+            </div>
 
         )
     }

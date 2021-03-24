@@ -9,6 +9,7 @@ import { SelCabinet } from './comp/tapeofcabinet'
 import { ScreenSize } from './comp/screensize';
 import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer'
 import { MyDocument } from './comp/testPDF'
+import { AddonsOne } from './comp/addonsOne'
 
 
 function App (){
@@ -33,6 +34,8 @@ function App (){
                                     return <ScreenSize />
                                     break;
                                 case 5:
+                                    return <AddonsOne />
+                                case 6:
                                     return (
                                         <div>
                                             <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">

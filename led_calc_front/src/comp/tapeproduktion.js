@@ -27,21 +27,29 @@ export function SelTapeProd (){
         console.log(context);
         VARS.typeOfProductID = e.target.value;
         console.log(VARS.typeOfProductID);
-        setContext(2);
+    }
+
+    const nextStep = () => {
+        if (VARS.typeOfProductID !== null) {
+            setContext(2);
+        } else {
+            alert("Вы ничего не выбрали")
+        }
     }
 
 
-
         return (
-        <select onChange={(e) => {getProducts(e)}}>
-            <option disabled={true} selected>Выберите тип продукции</option>
-            {data.tipyProdukcziis.map(item => (
-                <option value={item.id}>
-                    {item.tapeName}
-                </option>
-            ))}
-
-        </select>
+            <div className={'tapeOfProd'}>
+                <select onChange={(e) => {getProducts(e)}}>
+                    <option disabled={true} selected value={null}>Выберите тип продукции</option>
+                    {data.tipyProdukcziis.map(item => (
+                        <option value={item.id}>
+                            {item.tapeName}
+                        </option>
+                    ))}
+                </select>
+                <button onClick={nextStep}>Следующий шаг</button>
+            </div>
 
     );
 

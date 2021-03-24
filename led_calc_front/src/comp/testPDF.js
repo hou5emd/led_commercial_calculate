@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     cabinetSumm:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "148px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
     screenWeight:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "172px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
     screenService:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "196px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
-    screenServiceTape:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "220px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
+    screenTape:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "220px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
     kandel:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "244px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
     wattMaxAver:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "268px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
     volt:{ position: 'absolute', color:"#1f1f1f", left: "676px", top: "292px",  fontFamily:'Circe', fontWeight: 'normal', fontSize: 12,},
@@ -104,7 +104,7 @@ export const MyDocument = () => (
                 <Text style={styles.ledManufacture}>{VARS.module.ledManufacture}</Text>
                 <Text style={styles.ledLifeTime}>{VARS.module.lifeTime}</Text>
                 <Text style={styles.refreshRateHertz}>{VARS.module.refrashRateHertz}</Text>
-                <Text style={styles.cabinetSize}>{(VARS.module.moduleHeight == VARS.cabinet.height)?"-":VARS.cabinet.width + "x" + VARS.cabinet.height}</Text>
+                <Text style={styles.cabinetSize}>{(VARS.module.moduleHeight === VARS.cabinet.height)?"-":VARS.cabinet.width + "x" + VARS.cabinet.height}</Text>
                 <Text style={styles.tapeOfService}>{VARS.cabinet.tapeOfService}</Text>
                 <Text style={styles.cabinetWeight}>{VARS.cabinet.weight}</Text>
                 <Text style={styles.wattMaxM2}>{VARS.module.powerInputMaxM2}</Text>
@@ -117,27 +117,27 @@ export const MyDocument = () => (
             <View >
                 <Image src="http://localhost:1337/uploads/A4_3_ba3f9c7cf6.png" style={styles.pageBG} />
                 <Text style={styles.screenSize}>{VARS.screenSizeWidth} x {VARS.screenSizeHeight}</Text>
-                <Text style={styles.screenResolution}>1200 x 720</Text>
-                <Text style={styles.cabinetSumm}>135</Text>
-                <Text style={styles.screenWeight}>1200</Text>
-                <Text style={styles.screenService}>Фронтальное</Text>
-                <Text style={styles.screenServiceTape}>Кабинетный</Text>
-                <Text style={styles.kandel}>Кабинетный</Text>
-                <Text style={styles.wattMaxAver}>59 / 32</Text>
+                <Text style={styles.screenResolution}>{VARS.screenResolutionW} x {VARS.screenResolutionH}</Text>
+                <Text style={styles.cabinetSumm}>{VARS.cabinetSumm}</Text>
+                <Text style={styles.screenWeight}>{VARS.screenWeight}</Text>
+                <Text style={styles.screenService}>{VARS.cabinet.tapeOfService}</Text>
+                <Text style={styles.screenTape}>{VARS.screenTape}</Text>
+                <Text style={styles.kandel}>{VARS.module.kandel}</Text>
+                <Text style={styles.wattMaxAver}>{VARS.maxKWT} / {VARS.avrKWT}</Text>
                 <Text style={styles.volt}>220</Text>
-                <Text style={styles.screenIpWarranty}>ip 68</Text>
-                <Text style={styles.angleView}>160 / 120</Text>
-                <Text style={styles.viewDistance}>8</Text>
-                <Text style={styles.colorsSumm}>16 777 266</Text>
-                <Text style={styles.tempMode}>-45°C~+50°C влажность до 90%</Text>
-                <Text style={styles.screenP}>66,2</Text>
+                <Text style={styles.screenIpWarranty}>{VARS.cabinet.stepProtection}</Text>
+                <Text style={styles.angleView}>{VARS.module.viewAngle}</Text>
+                <Text style={styles.viewDistance}>{VARS.module.viewDistance}</Text>
+                <Text style={styles.colorsSumm}>{VARS.module.quantityColors}</Text>
+                <Text style={styles.tempMode}>{VARS.module.temperature}</Text>
+                <Text style={styles.screenP}>{VARS.screenP}</Text>
                 <Text style={styles.screenControl}>ПК/ПО</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
                 <Image src="http://localhost:1337/uploads/A4_18_e9c317cd22.png" style={styles.pageBG} />
-                <Text style={styles.screenPrice}>4 416 314,00 Р</Text>
+                <Text style={styles.screenPrice}>{numberWithSpacesFloat(VARS.priceOut)} ₽</Text>
                 <Text style={styles.sendingCardPrice}>16 314,00 Р</Text>
                 <Text style={styles.reciveCardPrice}>В стоимости</Text>
                 <Text style={styles.serviceZip}>В стоимости</Text>

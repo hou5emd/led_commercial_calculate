@@ -8,18 +8,29 @@ export function SelCabinet(){
     const tapeOfCabinetList = moduleTape.modelCabinet.map((item, key) =>
         <option value={key}>{item.modelCabinet}</option>
     );
+    const nextStep = () => {
+        if (VARS.cabinet.id >= 0) {
+            setContext(4);
+        } else {
+            alert("Вы ничего не выбрали")
+        }
+    }
 
     const ChangeCabinet = (e) =>{
         VARS.cabinet = moduleTape.modelCabinet[e.target.value];
         console.log(VARS.cabinet);
-        setContext(4);
+
     }
 
     return(
-        <select onChange={(e) => ChangeCabinet(e)}>
-            <option disabled={true} selected>Выберите модель кабинета</option>
-            {tapeOfCabinetList}
-        </select>
+        <div>
+            <select onChange={(e) => ChangeCabinet(e)}>
+                <option disabled={true} selected value={null}>Выберите модель кабинета</option>
+                {tapeOfCabinetList}
+            </select>
+            <button onClick={() => {setContext(context-1)}}>Шаг назад</button>
+            <button onClick={nextStep}>Следующий шаг</button>
+        </div>
     )
 }
 
