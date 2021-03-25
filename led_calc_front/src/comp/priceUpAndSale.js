@@ -23,7 +23,7 @@ function countPrices(){
 
     VARS.installationPrice = (VARS.selectedInstallations.price + VARS.selectedInstallations.price/100*VARS.selectedInstallations.priceUp)*VARS.screenP;
 //Выше рачет цены монтажа * на площадь
-    VARS.videoCpuPrice = VARS.selectedVideoCpu.price * VARS.usdrub / 100 * (100 * VARS.selectedVideoCpu.priceUp);//Расчет цены видео процессора
+    VARS.videoCpuPrice = VARS.selectedVideoCpu.price * VARS.usdrub / 100 * (100 + VARS.selectedVideoCpu.priceUp);//Расчет цены видео процессора
     VARS.electroBoxPrice = VARS.selectedElectroBox.price/100*(100 + VARS.selectedElectroBox.priceUp);
     VARS.electroBoxPrice = VARS.electroBoxPrice * Math.log(VARS.electroBoxPrice)/Math.log(VARS.electroBoxPrice/VARS.screenP/300+VARS.screenP)*VARS.screenP;
 //Выше ооооочень сложный расчет цены электрощита от площади экрана.
@@ -45,7 +45,8 @@ function countPrices(){
     VARS.agreementPrice = x(VARS.agreementPrice);
 
     VARS.fullPrice = VARS.priceOutLED + VARS.pcPrice + VARS.scrdPrice + VARS.installationPrice + VARS.videoCpuPrice + VARS.electroBoxPrice + VARS.electroProjectsPrice + VARS.projectKMPrice + VARS.agreementPrice;
-
+    VARS.priceFullImportants = VARS.priceOutLED + VARS.scrdPrice + VARS.pcPrice;
+    VARS.priceFullAddons = VARS.installationPrice + VARS.videoCpuPrice + VARS.electroBoxPrice + VARS.electroProjectsPrice + VARS.projectKMPrice + VARS.agreementPrice;
 
 
 

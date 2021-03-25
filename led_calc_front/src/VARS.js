@@ -6,7 +6,7 @@ import SelTapeProd from "./comp/tapeproduktion";
 
 
 //Запрос курса долара
-/*async function usdrub(){
+async function usdrub(){
     try{
         let requestList = await fetch("https://free.currconv.com/api/v7/convert?q=USD_rub&compact=ultra&apiKey=d627ca26905beb62f82a",{
             method: 'GET',
@@ -29,7 +29,7 @@ import SelTapeProd from "./comp/tapeproduktion";
     }
 
 }
-usdrub();*/
+usdrub();
 
 const VARS = {
     URL: "http://localhost:1337/",
@@ -62,7 +62,7 @@ const VARS = {
     selectedPC:null,//Выбранный пк
     pcPrice:null,//Цена компа
     selectedSCRD:null,//Выбранная отправляющая
-    selectedSCRDcount:null,//Колличество отправляющих
+    selectedSCRDcount:1,//Колличество отправляющих
     scrdPrice:null,//Цена всех отправляшек
     selectedInstallations:null,//Выбранный тип монтажа
     installationPrice:null,//Цена монтажа

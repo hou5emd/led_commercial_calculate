@@ -137,20 +137,24 @@ export const MyDocument = () => (
         <Page size="A4" orientation="landscape" >
             <View >
                 <Image src="http://localhost:1337/uploads/A4_18_e9c317cd22.png" style={styles.pageBG} />
-                <Text style={styles.screenPrice}>{numberWithSpacesFloat(VARS.priceOutLED)} ₽</Text>
-                <Text style={styles.sendingCardPrice}>16 314,00 Р</Text>
+                <Text style={styles.screenPrice}>{numberWithSpacesFloat(VARS.priceOutLED.toFixed(2))} ₽</Text>
+                <Text style={styles.sendingCardPrice}>{numberWithSpacesFloat(VARS.scrdPrice.toFixed(2))} ₽</Text>
                 <Text style={styles.reciveCardPrice}>В стоимости</Text>
                 <Text style={styles.serviceZip}>В стоимости</Text>
-                <Text style={styles.pcPrice}>16 314,00 Р</Text>
-                <Text style={styles.instalationPrice}>16 314,00 Р</Text>
-                <Text style={styles.videoCPU}>16 314,00 Р</Text>
-                <Text style={styles.electroBox}>16 314,00 Р</Text>
-                <Text style={styles.electroProject}>16 314,00 Р</Text>
-                <Text style={styles.projectKM}>16 314,00 Р</Text>
-                <Text style={styles.agreementAdmin}>16 314,00 Р</Text>
-                <Text style={styles.priceSummImportant}>1 016 314,00 Р</Text>
-                <Text style={styles.priceSummAddons}>1 016 314,00 Р</Text>
-                <Text style={styles.fullPrice}>1 016 314,00 Р</Text>
+                <Text style={styles.pcPrice}>{(VARS.pcPrice !== 0 && VARS.pcPrice !== null)?numberWithSpacesFloat(VARS.pcPrice.toFixed(2))+' ₽':"-"}</Text>
+                <Text style={styles.instalationPrice}>{(VARS.installationPrice !== 0 && VARS.installationPrice !== null)?numberWithSpacesFloat(VARS.installationPrice.toFixed(2))+' ₽':"-"}</Text>
+                <Text style={styles.videoCPU}>{(VARS.videoCpuPrice !== 0 && VARS.videoCpuPrice !== null)?numberWithSpacesFloat(VARS.videoCpuPrice.toFixed(2))+' ₽':"-"}</Text>
+                <Text style={styles.electroBox}>{(VARS.electroBoxPrice !== 0 && VARS.electroBoxPrice !== null)?numberWithSpacesFloat(VARS.electroBoxPrice.toFixed(2))+' ₽':"-"}</Text>
+                <Text style={styles.electroProject}>{(VARS.electroProjectsPrice !== 0 && VARS.electroProjectsPrice !== null)?numberWithSpacesFloat(VARS.electroProjectsPrice.toFixed(2))+' ₽':"-"}</Text>
+                <Text style={styles.projectKM}>{(VARS.projectKMPrice !== 0 && VARS.projectKMPrice !== null)?numberWithSpacesFloat(VARS.projectKMPrice.toFixed(2))+' ₽':"-"}</Text>
+                <Text style={styles.agreementAdmin}>{(VARS.agreementPrice !== 0 && VARS.agreementPrice !== null)?numberWithSpacesFloat(VARS.agreementPrice.toFixed(2))+' ₽':"-"}</Text>
+                <Text style={styles.priceSummImportant}>
+                    {numberWithSpacesFloat(VARS.priceFullImportants.toFixed(2))} ₽
+                </Text>
+                <Text style={styles.priceSummAddons}>
+                    {numberWithSpacesFloat(VARS.priceFullAddons.toFixed(2))} ₽
+                </Text>
+                <Text style={styles.fullPrice}>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))} ₽</Text>
                 <Text style={styles.daysWay}>30 рабочих дней</Text>
                 <Text style={styles.daysInstallation}>5 рабочих дней</Text>
                 <Text style={styles.daysStarting}>30 рабочих дней</Text>
