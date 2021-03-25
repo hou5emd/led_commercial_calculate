@@ -33,6 +33,7 @@ usdrub();*/
 
 const VARS = {
     URL: "http://localhost:1337/",
+    AUTORIZ:'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjE2MDg1NDUwLCJleHAiOjE2MTg2Nzc0NTB9.S3iICAYvJlQvcuvzg42mQbqdvCfO4i0qQozz2iFszT4',
     client: '',
     usdrub:76, //Курс доллара
     typeOfProductID: null, //Тип продукции
@@ -56,18 +57,37 @@ const VARS = {
     priceSale:0, //Процент кидки
     priceUP:0, //Процент наценки
     priceInWork:null, //Цена экрана до скидок и наценок
-    pricePreOut1:null, // Цена с наценками
-    pricePreOut2:null, // Цена с наценками и скидками
-    priceOut:null, //Прайс для кп
+    priceOutLED:null, //Прайс для кп
 
-    selectedPC:null,
-    selectedSCRD:null,
-    selectedSCRDPts:null,
+    selectedPC:null,//Выбранный пк
+    pcPrice:null,//Цена компа
+    selectedSCRD:null,//Выбранная отправляющая
+    selectedSCRDcount:null,//Колличество отправляющих
+    scrdPrice:null,//Цена всех отправляшек
+    selectedInstallations:null,//Выбранный тип монтажа
+    installationPrice:null,//Цена монтажа
+    selectedVideoCpu:null,//Выбранный видео проц
+    videoCpuPrice:null,//Цена видео процессора
+    selectedElectroBox:null,//Выбраный электрощит
+    electroBoxPrice:null,//Цена электрощита
+    selectedElectroProjects:null,//Выбранный электро проект
+    electroProjectsPrice:null,//Цена электропроекта
+    selectedProjectKM:null,//Проект Констр части
+    projectKMPrice:null,//Цена проекта констр части
+    selectedAgree:null,//выбранный тип согласования
+    agreementPrice:null,//Цена согласования
+    selectedMonitor:null,//Выбранный монитор
+    monitorPrice:null,//Цена монитора
+
+    fullPrice:0,//Цена проекта
 
 
 };
 VARS.client = new ApolloClient({
     uri: VARS.URL + 'graphql',
+    headers:{
+        'Authorization':VARS.AUTORIZ,
+    }
 
 });
 

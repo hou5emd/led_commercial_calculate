@@ -8,10 +8,13 @@ export function ScreenSize() {
 
     const changeWidth = (e) => {
         VARS.screenSizeInputWidth = e.target.value;//Считываем введенное значение ширины
+        VARS.screenSizeInputWidth = parseInt(VARS.screenSizeInputWidth,10);
 
     }
     const changeHeight = (e) => {
         VARS.screenSizeInputHeight = e.target.value;//Считываем значение высоты
+        VARS.screenSizeInputHeight = parseInt(VARS.screenSizeInputHeight);
+
     }
     
     const submitSize = () => {
@@ -27,17 +30,14 @@ export function ScreenSize() {
             VARS.screenSizeHeight = VARS.screenCabinetHeigth * VARS.cabinet.height; //Расчет высоты  в мм
             VARS.cabinetSumm = VARS.screenCabinetWidth * VARS.screenCabinetHeigth; //Сумма кабинетов
             VARS.screenWeight = VARS.cabinetSumm * VARS.cabinet.weight;
-            VARS.priceInWork = VARS.cabinetSumm * VARS.cabinet.price * VARS.usdrub / 100 * (100);
-            VARS.pricePreOut1 = VARS.priceInWork + VARS.priceInWork / 100 * VARS.priceUP;
-            VARS.pricePreOut2 = VARS.pricePreOut1 - VARS.pricePreOut1 / 100 * VARS.priceSale; //Конечная цена
-            VARS.priceOut = VARS.pricePreOut2.toFixed(2); //Цена экрана в рублях без доп оборудования
+            VARS.priceInWork = VARS.cabinetSumm * VARS.cabinet.price * VARS.usdrub / 100 * (100 + VARS.cabinet.priceUp);
             (VARS.cabinet.width === VARS.module.moduleWidth && VARS.cabinet.height === VARS.module.moduleHeight)?VARS.screenTape = "Модульный":VARS.screenTape = "Кабинетный"
-            console.log("Размер экр ", VARS.screenSizeWidth, "ш x ", VARS.screenSizeHeight, "в. Количество кабинетов: ", VARS.cabinetSumm, "Цена в рублях: ", VARS.priceOut);
+            console.log("Размер экр ", VARS.screenSizeWidth, "ш x ", VARS.screenSizeHeight, "в. Количество кабинетов: ", VARS.cabinetSumm, "Цена в рублях: ", VARS.priceInWork);
             VARS.screenResolutionW = VARS.screenSizeWidth/VARS.module.moduleWidth*VARS.module.resolutionWidth; //Разрешение по ширине
             VARS.screenResolutionH = VARS.screenSizeHeight/VARS.module.moduleHeight*VARS.module.resolutionHeight;//Разрешение по высоте
-            VARS.screenP = (VARS.screenSizeWidth * VARS.screenSizeHeight / 1000 / 1000).toFixed(1);
-            VARS.maxKWT = (VARS.screenP * VARS.module.powerInputMaxM2 / 1000).toFixed(0);
-            VARS.avrKWT = (VARS.screenP * VARS.module.powerInputAverageM2 / 1000).toFixed(0);
+            VARS.screenP = (VARS.screenSizeWidth * VARS.screenSizeHeight / 1000 / 1000);
+            VARS.maxKWT = (VARS.screenP * VARS.module.powerInputMaxM2 / 1000);
+            VARS.avrKWT = (VARS.screenP * VARS.module.powerInputAverageM2 / 1000);
             console.table(VARS.screenP,VARS.maxKWT,VARS.avrKWT);
             setContext(5);
         }

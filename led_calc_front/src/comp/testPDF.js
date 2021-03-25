@@ -137,7 +137,7 @@ export const MyDocument = () => (
         <Page size="A4" orientation="landscape" >
             <View >
                 <Image src="http://localhost:1337/uploads/A4_18_e9c317cd22.png" style={styles.pageBG} />
-                <Text style={styles.screenPrice}>{numberWithSpacesFloat(VARS.priceOut)} ₽</Text>
+                <Text style={styles.screenPrice}>{numberWithSpacesFloat(VARS.priceOutLED)} ₽</Text>
                 <Text style={styles.sendingCardPrice}>16 314,00 Р</Text>
                 <Text style={styles.reciveCardPrice}>В стоимости</Text>
                 <Text style={styles.serviceZip}>В стоимости</Text>

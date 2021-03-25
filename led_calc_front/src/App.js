@@ -10,6 +10,9 @@ import { ScreenSize } from './comp/screensize';
 import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer'
 import { MyDocument } from './comp/testPDF'
 import { AddonsOne } from './comp/addonsOne'
+import { AddonsTwo } from  './comp/addonsTwo'
+import { AddonsThree } from "./comp/addonsThree";
+import { PriceUpAndSale } from './comp/priceUpAndSale'
 
 
 function App (){
@@ -35,7 +38,16 @@ function App (){
                                     break;
                                 case 5:
                                     return <AddonsOne />
+                                    break;
                                 case 6:
+                                    return <AddonsTwo />
+                                    break;
+                                case 7:
+                                    return <AddonsThree />
+                                case 8:
+                                    return <PriceUpAndSale />
+                                    break;
+                                case 9:
                                     return (
                                         <div>
                                             <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">

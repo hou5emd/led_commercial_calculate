@@ -53,3 +53,7 @@ div.screen-size>label:first-child{
   margin-bottom: 32px;
 
 }
+
+.salePrice>input{
+  min-width: 400px;
+}
