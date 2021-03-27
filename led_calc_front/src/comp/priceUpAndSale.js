@@ -25,7 +25,10 @@ function countPrices(){
 //Выше рачет цены монтажа * на площадь
     VARS.videoCpuPrice = VARS.selectedVideoCpu.price * VARS.usdrub / 100 * (100 + VARS.selectedVideoCpu.priceUp);//Расчет цены видео процессора
     VARS.electroBoxPrice = VARS.selectedElectroBox.price/100*(100 + VARS.selectedElectroBox.priceUp);
-    VARS.electroBoxPrice = VARS.electroBoxPrice * Math.log(VARS.electroBoxPrice)/Math.log(VARS.electroBoxPrice/VARS.screenP/300+VARS.screenP)*VARS.screenP;
+    if (VARS.electroBoxPrice > 0){
+        VARS.electroBoxPrice = VARS.electroBoxPrice * Math.log(VARS.electroBoxPrice)/Math.log(VARS.electroBoxPrice/VARS.screenP/300+VARS.screenP)*VARS.screenP;
+    }
+
 //Выше ооооочень сложный расчет цены электрощита от площади экрана.
 
     VARS.electroProjectsPrice = VARS.selectedElectroProjects.price/100*(100+VARS.selectedElectroProjects.priceUp);//Цена электропроекта
