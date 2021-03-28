@@ -29,11 +29,11 @@ async function usdrub(){
     }
 
 }
-usdrub();
+//usdrub();
 
 const VARS = {
     URL: "http://localhost:1337/",
-    AUTORIZ:'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjE2MDg1NDUwLCJleHAiOjE2MTg2Nzc0NTB9.S3iICAYvJlQvcuvzg42mQbqdvCfO4i0qQozz2iFszT4',
+    AUTORIZ:null,
     client: '',
     usdrub:76, //Курс доллара
     typeOfProductID: null, //Тип продукции
@@ -83,13 +83,7 @@ const VARS = {
 
 
 };
-VARS.client = new ApolloClient({
-    uri: VARS.URL + 'graphql',
-    headers:{
-        'Authorization':VARS.AUTORIZ,
-    }
 
-});
 
 function numberWithSpacesInt(x) {
     

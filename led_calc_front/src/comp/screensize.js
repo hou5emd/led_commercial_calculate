@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import { VARS } from '../VARS'
 import { CalcStateContext } from './contexts';
+import {checkStatus, parseJSON} from "./resptests";
 
 export function ScreenSize() {
     const [context, setContext] = useContext(CalcStateContext);
@@ -39,6 +40,11 @@ export function ScreenSize() {
             VARS.maxKWT = (VARS.screenP * VARS.module.powerInputMaxM2 / 1000);
             VARS.avrKWT = (VARS.screenP * VARS.module.powerInputAverageM2 / 1000);
             console.table(VARS.screenP,VARS.maxKWT,VARS.avrKWT);
+            getTemplate().then(checkStatus).then(parseJSON).then(resp => {
+                VARS.shablon = resp
+                console.log(VARS.shablon);
+            });
+
             setContext(5);
         }
     }
@@ -57,4 +63,14 @@ export function ScreenSize() {
             <button onClick={submitSize}>Следующий шаг</button>
         </div>        
     );
+}
+
+async function getTemplate(){
+    let out = await fetch(VARS.URL + "shablony-kps/"+ VARS.cabinet.shablon,{
+        headers:{
+            'Content-Type': 'application/json',
+            'Authorization': VARS.AUTORIZ,
+        }
+    });
+    return out
 }

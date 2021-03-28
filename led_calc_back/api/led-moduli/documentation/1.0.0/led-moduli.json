@@ -727,11 +727,17 @@
                 "nameToProp": {
                   "type": "string"
                 },
+                "priceUp": {
+                  "type": "number"
+                },
                 "shablon": {
                   "type": "string"
                 },
-                "priceUp": {
-                  "type": "number"
+                "photoCabinet": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"

@@ -15,8 +15,8 @@
       "type": "string"
     },
     "ledModuli": {
-      "via": "modelCabinet",
-      "model": "led-moduli"
+      "model": "led-moduli",
+      "via": "modelCabinet"
     },
     "price": {
       "type": "float"
@@ -39,12 +39,23 @@
     "nameToProp": {
       "type": "string"
     },
-    "shablon": {
-      "model": "shablony-kp",
-      "via": "tapeCabinets"
-    },
     "priceUp": {
       "type": "float"
+    },
+    "shablon": {
+      "model": "shablony-kp",
+      "via": "tape_cabinets"
+    },
+    "photoCabinet": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

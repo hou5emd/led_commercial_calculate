@@ -11,8 +11,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
+      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/usersList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/documentation/1.0.0/led-moduli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/led-moduli/models/led-moduli.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/documentation/1.0.0/serii-kabinetov.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/serii-kabinetov/models/serii-kabinetov.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/documentation/1.0.0/shablony-kp.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/documentation/1.0.0/shablony-kp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/shablony-kp/models/shablony-kp.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/contexts.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/contexts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +85,7 @@
       <workItem from="1616233847853" duration="3190000" />
       <workItem from="1616315083080" duration="5438000" />
       <workItem from="1616400543364" duration="93399000" />
-      <workItem from="1616705794090" duration="3646000" />
+      <workItem from="1616705794090" duration="32483000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>

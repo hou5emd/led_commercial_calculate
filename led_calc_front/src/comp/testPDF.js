@@ -88,15 +88,15 @@ export const MyDocument = () => (
     <Document>
         <Page size="A4" orientation="landscape" >
             <View >
-                <Image src="http://localhost:1337/uploads/A4_1_310b018592.png" style={styles.pageBG} />
+                <Image src={VARS.URL + VARS.shablon.str1[0].url.slice(1)} style={styles.pageBG} />
                 <Text style={styles.text_1page}>{numberWithSpacesInt(VARS.screenSizeWidth)} x {numberWithSpacesInt(VARS.screenSizeHeight)} мм</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
-                <Image src="http://localhost:1337/uploads/A4_2_ca8b240d53.png" style={styles.pageBG} />
-                <Image src="http://localhost:1337/uploads/MF_P06h12_SMD_Showledtech_1000_1000_a6880d081c.jpg" style={styles.imgModule} />
-                <Image src="http://localhost:1337/uploads/MF_P07h15_SMD_prozrachnost_50_Showledtech_1000_1000_7ec36749ff.jpg" style={styles.imgCabinet} />
+                <Image src={VARS.URL + VARS.shablon.str2[0].url.slice(1)} style={styles.pageBG} />
+                <Image src={VARS.URL + VARS.module.photoModule[0].url.slice(1)} style={styles.imgModule} />
+                <Image src={VARS.URL + VARS.cabinet.photoCabinet[0].url.slice(1)} style={styles.imgCabinet} />
                 <Text style={styles.pixelStep}>{(VARS.module.ledStepHeight > 0) ? VARS.module.ledStep + 'x' + VARS.module.ledStepHeight:VARS.module.ledStep}</Text>
                 <Text style={styles.moduleSize}>{VARS.module.moduleWidth}x{VARS.module.moduleHeight}</Text>
                 <Text style={styles.moduleResolution}>{VARS.module.resolutionWidth}x{VARS.module.resolutionHeight}</Text>
@@ -115,7 +115,7 @@ export const MyDocument = () => (
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
-                <Image src="http://localhost:1337/uploads/A4_3_ba3f9c7cf6.png" style={styles.pageBG} />
+                <Image src={VARS.URL + VARS.shablon.str3[0].url.slice(1)} style={styles.pageBG} />
                 <Text style={styles.screenSize}>{VARS.screenSizeWidth} x {VARS.screenSizeHeight}</Text>
                 <Text style={styles.screenResolution}>{VARS.screenResolutionW} x {VARS.screenResolutionH}</Text>
                 <Text style={styles.cabinetSumm}>{VARS.cabinetSumm}</Text>
@@ -123,20 +123,20 @@ export const MyDocument = () => (
                 <Text style={styles.screenService}>{VARS.cabinet.tapeOfService}</Text>
                 <Text style={styles.screenTape}>{VARS.screenTape}</Text>
                 <Text style={styles.kandel}>{VARS.module.kandel}</Text>
-                <Text style={styles.wattMaxAver}>{VARS.maxKWT} / {VARS.avrKWT}</Text>
+                <Text style={styles.wattMaxAver}>{VARS.maxKWT.toFixed(2)} / {VARS.avrKWT.toFixed(2)}</Text>
                 <Text style={styles.volt}>220</Text>
                 <Text style={styles.screenIpWarranty}>{VARS.cabinet.stepProtection}</Text>
                 <Text style={styles.angleView}>{VARS.module.viewAngle}</Text>
                 <Text style={styles.viewDistance}>{VARS.module.viewDistance}</Text>
                 <Text style={styles.colorsSumm}>{VARS.module.quantityColors}</Text>
                 <Text style={styles.tempMode}>{VARS.module.temperature}</Text>
-                <Text style={styles.screenP}>{VARS.screenP}</Text>
+                <Text style={styles.screenP}>{VARS.screenP.toFixed(1)}</Text>
                 <Text style={styles.screenControl}>ПК/ПО</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
-                <Image src="http://localhost:1337/uploads/A4_18_e9c317cd22.png" style={styles.pageBG} />
+                <Image src={VARS.URL + VARS.shablon.str4[0].url.slice(1)} style={styles.pageBG} />
                 <Text style={styles.screenPrice}>{numberWithSpacesFloat(VARS.priceOutLED.toFixed(2))} ₽</Text>
                 <Text style={styles.sendingCardPrice}>{numberWithSpacesFloat(VARS.scrdPrice.toFixed(2))} ₽</Text>
                 <Text style={styles.reciveCardPrice}>В стоимости</Text>
@@ -155,28 +155,28 @@ export const MyDocument = () => (
                     {numberWithSpacesFloat(VARS.priceFullAddons.toFixed(2))} ₽
                 </Text>
                 <Text style={styles.fullPrice}>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))} ₽</Text>
-                <Text style={styles.daysWay}>30 рабочих дней</Text>
-                <Text style={styles.daysInstallation}>5 рабочих дней</Text>
-                <Text style={styles.daysStarting}>30 рабочих дней</Text>
-                <Text style={styles.daysSumm}>5 рабочих дней</Text>
+                <Text style={styles.daysWay}>{VARS.daysPost}</Text>
+                <Text style={styles.daysInstallation}>{VARS.daysInstall}</Text>
+                <Text style={styles.daysStarting}>{VARS.daysStartingWork}</Text>
+                <Text style={styles.daysSumm}>{VARS.daySumm} рабочих дней</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
-                <Image src="http://localhost:1337/uploads/A4_6_d3142a586f.png" style={styles.pageBG} />
+                <Image src={VARS.URL + VARS.shablon.str5[0].url.slice(1)} style={styles.pageBG} />
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
-                <Image src="http://localhost:1337/uploads/A4_7_602991ed57.png" style={styles.pageBG} />
+                <Image src={VARS.URL + VARS.shablon.str6[0].url.slice(1)} style={styles.pageBG} />
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
             <View >
-                <Image src="http://localhost:1337/uploads/A4_8_8ea6237b93.png" style={styles.pageBG} />
-                <Text style={styles.nameManager}>Елена Столярова</Text>
-                <Text style={styles.phoneManager}>8 (999) 999-99-99</Text>
-                <Text style={styles.mailManager}>sales2@bmlife.ru</Text>
+                <Image src={VARS.URL + VARS.shablon.str7[0].url.slice(1)} style={styles.pageBG} />
+                <Text style={styles.nameManager}>{VARS.userActive.NAME + ' ' + VARS.userActive.LAST_NAME}</Text>
+                <Text style={styles.phoneManager}>{VARS.userActive.PERSONAL_MOBILE}</Text>
+                <Text style={styles.mailManager}>{VARS.userActive.EMAIL}</Text>
             </View>
         </Page>
     </Document>
