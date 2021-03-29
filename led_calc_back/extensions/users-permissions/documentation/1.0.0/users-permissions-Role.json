@@ -561,6 +561,15 @@
                 "role": {
                   "type": "string"
                 },
+                "firstName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

@@ -28,8 +28,8 @@ export function SelCabinet(){
                 <option disabled={true} selected value={null}>Выберите модель кабинета</option>
                 {tapeOfCabinetList}
             </select>
-            <button onClick={() => {setContext(context-1)}}>Шаг назад</button>
-            <button onClick={nextStep}>Следующий шаг</button>
+            <button className={"bt primary1-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
+            <button className={"bt primary1-bt"} onClick={nextStep}>Следующий шаг</button>
         </div>
     )
 }

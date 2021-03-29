@@ -26,6 +26,8 @@ Font.register({ family: 'Circe', fonts:[
 //Top обязательно +3x
 const styles = StyleSheet.create({
     text_1page: { position:'absolute', left:"257px", top: "317px", fontFamily:"Gilroy", fontWeight: 300, fontSize: 20, color:"#1f1f1f"},
+    text_1page_person: { position:'absolute', left:"50px", top: "382px", fontFamily:"Gilroy", fontWeight: 300, fontSize: 16, color:"#1f1f1f"},
+    text_1page_date: { position:'absolute', left:"50px", top: "408px", fontFamily:"Gilroy", fontWeight: 300, fontSize: 16, color:"#1f1f1f"},
     pageBG: { position: 'absolute', left: 0, top:0, width: '100vw', height:'100vh'},
     imgModule:{ position: 'absolute', left: "58px", top: "146px", width: '218px', height: '139px',},
     imgCabinet:{ position: 'absolute', left: "458px", top: "126px", width: '286px', height: '177px', },
@@ -78,11 +80,18 @@ const styles = StyleSheet.create({
     daysInstallation:{ position: 'absolute', color:"#1f1f1f", left: "126px", top: "469px",  fontFamily:'Gilroy', fontWeight: 800, fontSize: 14,},
     daysStarting:{ position: 'absolute', color:"#1f1f1f", left: "502px", top: "381px",  fontFamily:'Gilroy', fontWeight: 800, fontSize: 14,},
     daysSumm:{ position: 'absolute', color:"#1f1f1f", left: "502px", top: "469px",  fontFamily:'Gilroy', fontWeight: 800, fontSize: 14,},
-    nameManager:{ position: 'absolute', color:"#1f1f1f", left: "92px", top: "139px",  fontFamily:'Circe', fontWeight: 400, fontSize: 16,},
+    nameManager:{ position: 'absolute', color:"#1f1f1f", left: "92px", top: "138px",  fontFamily:'Circe', fontWeight: 400, fontSize: 16,},
     phoneManager:{ position: 'absolute', color:"#1f1f1f", left: "92px", top: "195px",  fontFamily:'Circe', fontWeight: 400, fontSize: 16,},
     mailManager:{ position: 'absolute', color:"#1f1f1f", left: "92px", top: "279px",  fontFamily:'Circe', fontWeight: 400, fontSize: 16,},
 });
 
+let date = new Date()
+let options = {
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    timezone: 'UTC'
+};
 // Create Document Component
 export const MyDocument = () => (
     <Document>
@@ -90,6 +99,8 @@ export const MyDocument = () => (
             <View >
                 <Image src={VARS.URL + VARS.shablon.str1[0].url.slice(1)} style={styles.pageBG} />
                 <Text style={styles.text_1page}>{numberWithSpacesInt(VARS.screenSizeWidth)} x {numberWithSpacesInt(VARS.screenSizeHeight)} мм</Text>
+                <Text style={styles.text_1page_person}>Для: {VARS.persona}</Text>
+                <Text style={styles.text_1page_date}>Дата: {date.toLocaleString("ru", options)}</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
@@ -155,10 +166,10 @@ export const MyDocument = () => (
                     {numberWithSpacesFloat(VARS.priceFullAddons.toFixed(2))} ₽
                 </Text>
                 <Text style={styles.fullPrice}>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))} ₽</Text>
-                <Text style={styles.daysWay}>{VARS.daysPost}</Text>
-                <Text style={styles.daysInstallation}>{VARS.daysInstall}</Text>
-                <Text style={styles.daysStarting}>{VARS.daysStartingWork}</Text>
-                <Text style={styles.daysSumm}>{VARS.daySumm} рабочих дней</Text>
+                <Text style={styles.daysWay}>{(VARS.daysPost%10 === 1 && VARS.daysPost%100 !== 11)?VARS.daysPost + " рабочий день":VARS.daysPost + " рабочих дня"}</Text>
+                <Text style={styles.daysInstallation}>{(VARS.daysInstall%10 === 1 && VARS.daysInstall%100 !== 11)?VARS.daysInstall + " рабочий день":VARS.daysInstall + " рабочих дня"}</Text>
+                <Text style={styles.daysStarting}>{(VARS.daysStartingWork%10 === 1 && VARS.daysStartingWork%100 !== 11)?VARS.daysStartingWork + " рабочий день":VARS.daysStartingWork + " рабочих дня"}</Text>
+                <Text style={styles.daysSumm}>{(VARS.daySumm%10 === 1 && VARS.daySumm%100 !== 11)?VARS.daySumm + " рабочий день":VARS.daySumm + " рабочих дня"}</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >
@@ -174,9 +185,9 @@ export const MyDocument = () => (
         <Page size="A4" orientation="landscape" >
             <View >
                 <Image src={VARS.URL + VARS.shablon.str7[0].url.slice(1)} style={styles.pageBG} />
-                <Text style={styles.nameManager}>{VARS.userActive.NAME + ' ' + VARS.userActive.LAST_NAME}</Text>
-                <Text style={styles.phoneManager}>{VARS.userActive.PERSONAL_MOBILE}</Text>
-                <Text style={styles.mailManager}>{VARS.userActive.EMAIL}</Text>
+                <Text style={styles.nameManager}>{VARS.userActive.firstName + ' ' + VARS.userActive.lastName}</Text>
+                <Text style={styles.phoneManager}>{VARS.userActive.phone}</Text>
+                <Text style={styles.mailManager}>{VARS.userActive.email}</Text>
             </View>
         </Page>
     </Document>

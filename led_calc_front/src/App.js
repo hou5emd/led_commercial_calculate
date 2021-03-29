@@ -3,6 +3,7 @@ import { VARS } from './VARS.js';
 import { ApolloProvider } from 'react-apollo';
 import { SelTapeProd } from './comp/tapeproduktion'
 import './App.css';
+import logo from './img/logo-dark.png'
 import { CalcStateContext, LoginContext } from'./comp/contexts';
 import Cookie from "js-cookie";
 import Auth from "./comp/auth";
@@ -17,16 +18,24 @@ import { AddonsThree } from "./comp/addonsThree";
 import { PriceUpAndSale } from './comp/priceUpAndSale'
 import { DaysInstall } from './comp/daysInstall'
 import { UsersList } from './comp/usersList'
+import { Personals } from './comp/personals'
 import ApolloClient from "apollo-boost";
 
 
 function App (){
     let date = new Date()
+    let options = {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        timezone: 'UTC'
+    };
     const [context, setContext] = useState(1);
     const [login, setLogin] = useState(0)
     if (!Cookie.get("token") && !Cookie.get("login")){
         return (
                 <div className={"application"}>
+                    <img src={logo} alt="" className={"logo"}/>
                     <Auth setLogin={setLogin}/>
                 </div>
 
@@ -82,11 +91,14 @@ function App (){
                                             return <UsersList/>
                                             break;
                                         case 11:
+                                            return <Personals />
+                                            break;
+                                        case 12:
                                             return (
 
                                                 <div>
                                                     <PDFDownloadLink document={<MyDocument/>}
-                                                                     fileName={date + "_" + VARS.priceUP + "PU_" + VARS.priceSale + "PS" + ".pdf"}>
+                                                                     fileName={date.toLocaleString("ru",options) + "_" + VARS.priceUP + "PU_" + VARS.priceSale + "PS" + ".pdf"}>
                                                         {({blob, url, loading, error}) => (loading ? 'Собираю кп...' : 'Скачать!')}
                                                     </PDFDownloadLink>
                                                 </div>
@@ -102,10 +114,15 @@ function App (){
 
                     </ApolloProvider>
                 </div>
-                <button onClick={()=>{
-                    setContext(1);
-                    logout()
-                }}>Выйти</button>
+                <div className={"footer"}>
+                    <button className={"bt primary1-bt"} onClick={()=>{
+                        setContext(1)
+                    }}>Новое КП</button>
+                    <button className={"bt second-bt"} onClick={()=>{
+                        setContext(1);
+                        logout()
+                    }}>Выйти</button>
+                </div>
             </div>
 
         );

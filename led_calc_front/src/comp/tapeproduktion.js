@@ -48,7 +48,7 @@ export function SelTapeProd (){
                         </option>
                     ))}
                 </select>
-                <button onClick={nextStep}>Следующий шаг</button>
+                <button className={"bt primary1-bt"} onClick={nextStep}>Следующий шаг</button>
             </div>
 
     );

@@ -89,8 +89,8 @@ function PriceUpAndSale(){
                 Изменение цены проекта
                 <div>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))}</div>
             </div>
-            <button onClick={() => {stepUpDwn(-1)}}>Шаг назад</button>
-            <button onClick={() => {stepUpDwn(1)}}>Следующий шаг</button>
+            <button className={"bt primary1-bt"} onClick={() => {stepUpDwn(-1)}}>Шаг назад</button>
+            <button className={"bt primary1-bt"} onClick={() => {stepUpDwn(1)}}>Следующий шаг</button>
         </div>
     );
 

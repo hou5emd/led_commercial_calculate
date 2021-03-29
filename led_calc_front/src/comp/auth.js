@@ -40,7 +40,7 @@ class Auth extends Component {
                     this.changeContext()
                     //resolve the promise to set loading to false in SignUp form
                     resolve(res);
-                    //redirect back to home page for restaurance selection
+
 
                 })
                 .catch((error) => {
@@ -67,7 +67,7 @@ class Auth extends Component {
                         Введите пароль
                         <input type="password" name="pass"/>
                     </label>
-                    <button tape="submit">Войти</button>
+                    <button className={"bt primary1-bt"} tape="submit">Войти</button>
                 </form>
             </div>
         );

@@ -74,11 +74,11 @@ class ListModules extends React.Component {
                     <option disabled={true} selected>Выберите модуль</option>
                     {selListModule}
                 </select>
-                <button onClick={() => {
+                <button className={"bt primary1-bt"} onClick={() => {
                     const [context, setContext] = this.context;
                     setContext(context-1);
                 }}>Шаг назад</button>
-                <button onClick={this.nextStep}>Следующий шаг</button>
+                <button className={"bt primary1-bt"} onClick={this.nextStep}>Следующий шаг</button>
             </div>
 
         )

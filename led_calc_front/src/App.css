@@ -19,6 +19,8 @@
   margin: auto;
 }
 label{
+  font-size: 18px;
+  font-weight: bold;
   width: fit-content;
   flex-direction: column;
   display: flex;
@@ -37,6 +39,7 @@ select, input {
   font-weight: 600;
   font-size: 18px;
   background: transparent;
+  margin-bottom: 32px;
 }
 
 label>input{
@@ -49,11 +52,56 @@ div.screen-size{
 div.screen-size>label>input{
   margin-top: 16px;
 }
-div.screen-size>label:first-child{
+/*div.screen-size>label:first-child{
   margin-bottom: 32px;
 
-}
+}*/
 
 .salePrice>input{
   min-width: 400px;
+}
+.bt{
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 16px 32px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 120%;
+  transition: 0.4s ease all;
+  border-radius: 50px;
+  color: #fff;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+.primary1-bt{
+  background: #ff1e24
+}
+.primary-bt{
+  background: #ff9494
+}
+.second-bt{
+  background: #484848
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 32px 16px;
+}
+.footer>button{
+  margin: 0 16px 0 16px;
+}
+.logo{
+  max-width: 128px;
+  height: auto;
+  margin-bottom: 22px;
 }

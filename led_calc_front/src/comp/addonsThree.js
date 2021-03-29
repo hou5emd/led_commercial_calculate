@@ -129,12 +129,12 @@ export class AddonsThree extends React.Component{
                     Выберите тип согласования
                     {admAgree}
                 </label>
-                <button onClick={() => {
+                <button className={"bt primary1-bt"} onClick={() => {
                     const [context, setContext] = this.context;
                     setContext(context - 1);
                 }}>Шаг назад
                 </button>
-                <button onClick={this.nextStep}>Следующий шаг</button>
+                <button className={"bt primary1-bt"} onClick={this.nextStep}>Следующий шаг</button>
             </div>
         );
     }
