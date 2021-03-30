@@ -17,6 +17,8 @@
 }
 #root>div{
   margin: auto;
+  max-width: 100%;
+  padding: 15px;
 }
 label{
   font-size: 18px;
@@ -28,18 +30,16 @@ label{
   
 }
 select, input {
+  max-width: 100%;
   display: block;
   height: 56px;
-  width: fit-content;
   padding: 0 20px;
-  margin: auto;
   color: inherit;
   border: 1px solid #c9c9ca;
   border-radius: 4px;
   font-weight: 600;
-  font-size: 18px;
   background: transparent;
-  margin-bottom: 32px;
+  margin: auto auto 32px 0;
 }
 
 label>input{

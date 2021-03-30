@@ -167,9 +167,9 @@ export const MyDocument = () => (
                 </Text>
                 <Text style={styles.fullPrice}>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))} ₽</Text>
                 <Text style={styles.daysWay}>{(VARS.daysPost%10 === 1 && VARS.daysPost%100 !== 11)?VARS.daysPost + " рабочий день":VARS.daysPost + " рабочих дня"}</Text>
-                <Text style={styles.daysInstallation}>{(VARS.daysInstall%10 === 1 && VARS.daysInstall%100 !== 11)?VARS.daysInstall + " рабочий день":VARS.daysInstall + " рабочих дня"}</Text>
-                <Text style={styles.daysStarting}>{(VARS.daysStartingWork%10 === 1 && VARS.daysStartingWork%100 !== 11)?VARS.daysStartingWork + " рабочий день":VARS.daysStartingWork + " рабочих дня"}</Text>
-                <Text style={styles.daysSumm}>{(VARS.daySumm%10 === 1 && VARS.daySumm%100 !== 11)?VARS.daySumm + " рабочий день":VARS.daySumm + " рабочих дня"}</Text>
+                <Text style={styles.daysInstallation}>{(VARS.daysInstall%10 === 1 && VARS.daysInstall%100 !== 11)?VARS.daysInstall + " рабочий день":VARS.daysInstall + " рабочих дней"}</Text>
+                <Text style={styles.daysStarting}>{(VARS.daysStartingWork%10 === 1 && VARS.daysStartingWork%100 !== 11)?VARS.daysStartingWork + " рабочий день":VARS.daysStartingWork + " рабочих дней"}</Text>
+                <Text style={styles.daysSumm}>{(VARS.daySumm%10 === 1 && VARS.daySumm%100 !== 11)?VARS.daySumm + " рабочий день":VARS.daySumm + " рабочих дней"}</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >

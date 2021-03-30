@@ -32,7 +32,7 @@ async function usdrub(){
 //usdrub();
 
 const VARS = {
-    URL: "http://localhost:1337/",
+    URL: process.env.REACT_APP_URL,
     AUTORIZ:null,
     client: '',
     usdrub:76, //Курс доллара

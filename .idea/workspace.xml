@@ -11,27 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
-      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/personals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/usersList.js.back" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/users-permissions/documentation/1.0.0/users-permissions-Role.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/users-permissions/documentation/1.0.0/users-permissions-Role.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/users-permissions/documentation/1.0.0/users-permissions-User.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/users-permissions/documentation/1.0.0/users-permissions-User.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/users-permissions/models/User.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/users-permissions/models/User.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/config/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/config/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsThree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tapeofcabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeofcabinet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/usersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/usersList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +47,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andra\Documents\GitHub\led_commercial_calculate\led_calc_front" />
+      <recent name="C:\Users\andra\Documents\GitHub\led_commercial_calculate\led_calc_front\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\andra\Documents\GitHub\led_commercial_calculate\led_calc_front\src\comp" />
     </key>
@@ -93,7 +81,8 @@
       <workItem from="1616233847853" duration="3190000" />
       <workItem from="1616315083080" duration="5438000" />
       <workItem from="1616400543364" duration="93399000" />
-      <workItem from="1616705794090" duration="46290000" />
+      <workItem from="1616705794090" duration="52410000" />
+      <workItem from="1617050019038" duration="5181000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
@@ -140,10 +129,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Start pdf render" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616942189201">
+    <state x="690" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617050585433">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="690" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1616942189201" />
+    <state x="690" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1617050585433" />
     <state x="659" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615661387569">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
