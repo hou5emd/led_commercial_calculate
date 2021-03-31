@@ -74,7 +74,7 @@ class ListModules extends React.Component {
                     <option disabled={true} selected>Выберите модуль</option>
                     {selListModule}
                 </select>
-                <button className={"bt primary1-bt"} onClick={() => {
+                <button className={"bt second-bt"} onClick={() => {
                     const [context, setContext] = this.context;
                     setContext(context-1);
                 }}>Шаг назад</button>

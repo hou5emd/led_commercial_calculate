@@ -81,15 +81,15 @@ function PriceUpAndSale(){
 
     return(
         <div className={"salePrice"}>
-            <input type="range" min={0} max={100} step={1} defaultValue={0} onChange={event => onChangeUpPrice(event)}/>
             <span>{upPriceValue}% Наценки</span>
-            <input type="range" min={0} max={20} step={1} defaultValue={0} onChange={event => onChangeSalePrice(event)}/>
+            <input type="range" min={0} max={100} step={1} defaultValue={0} onChange={event => onChangeUpPrice(event)}/>
             <span>{sale}% Скидки</span>
+            <input type="range" min={0} max={20} step={1} defaultValue={0} onChange={event => onChangeSalePrice(event)}/>
             <div>
                 Изменение цены проекта
                 <div>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))}</div>
             </div>
-            <button className={"bt primary1-bt"} onClick={() => {stepUpDwn(-1)}}>Шаг назад</button>
+            <button className={"bt second-bt"} onClick={() => {stepUpDwn(-1)}}>Шаг назад</button>
             <button className={"bt primary1-bt"} onClick={() => {stepUpDwn(1)}}>Следующий шаг</button>
         </div>
     );

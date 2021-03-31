@@ -21,7 +21,7 @@ export class Personals extends Component {
                     Для кого кп?
                     <input onChange={({target})=>{VARS.persona =  target.value}} type="text"/>
                 </label>
-                <button className={"bt primary1-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
+                <button className={"bt second-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
                 <button className={"bt primary1-bt"} onClick={() => {this.nextStep()}}>Получить кп</button>
             </div>
         );

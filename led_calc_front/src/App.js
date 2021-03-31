@@ -115,13 +115,13 @@ function App (){
                     </ApolloProvider>
                 </div>
                 <div className={"footer"}>
-                    <button className={"bt primary1-bt"} onClick={()=>{
-                        setContext(1)
-                    }}>Новое КП</button>
                     <button className={"bt second-bt"} onClick={()=>{
                         setContext(1);
                         logout()
                     }}>Выйти</button>
+                    <button className={"bt primary1-bt"} onClick={()=>{
+                        setContext(1)
+                    }}>Новое КП</button>
                 </div>
             </div>
 

@@ -135,7 +135,7 @@ export class AddonsOne extends React.Component {
                 <label>Введите количество отправляющих карт
                     <input type="number" defaultValue="1" min="1" max="999" step="1" onChange={event => this.onChangeSCRDPts(event)}/>
                 </label>
-                <button className={"bt primary1-bt"} onClick={() => {
+                <button className={"bt second-bt"} onClick={() => {
                     const [context, setContext] = this.context;
                     setContext(context-1);
                 }}>Шаг назад</button>

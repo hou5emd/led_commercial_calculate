@@ -92,6 +92,15 @@ let options = {
     day: 'numeric',
     timezone: 'UTC'
 };
+function daysRus(x){
+    if (x%10 === 1 && x%100 !== 11){
+       return x + " рабочий день"
+    } else if (x%10 === 2 || x%10 === 3 || x%10 === 4) {
+        return x + " рабочих дня"
+    } else {
+        return x + " рабочих дней"
+    }
+}
 // Create Document Component
 export const MyDocument = () => (
     <Document>
@@ -129,7 +138,7 @@ export const MyDocument = () => (
                 <Image src={VARS.URL + VARS.shablon.str3[0].url.slice(1)} style={styles.pageBG} />
                 <Text style={styles.screenSize}>{VARS.screenSizeWidth} x {VARS.screenSizeHeight}</Text>
                 <Text style={styles.screenResolution}>{VARS.screenResolutionW} x {VARS.screenResolutionH}</Text>
-                <Text style={styles.cabinetSumm}>{VARS.cabinetSumm}</Text>
+                <Text style={styles.cabinetSumm}>{(VARS.module.moduleHeight === VARS.cabinet.height)?"Экран модульный":VARS.cabinetSumm}</Text>
                 <Text style={styles.screenWeight}>{VARS.screenWeight}</Text>
                 <Text style={styles.screenService}>{VARS.cabinet.tapeOfService}</Text>
                 <Text style={styles.screenTape}>{VARS.screenTape}</Text>
@@ -166,10 +175,10 @@ export const MyDocument = () => (
                     {numberWithSpacesFloat(VARS.priceFullAddons.toFixed(2))} ₽
                 </Text>
                 <Text style={styles.fullPrice}>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))} ₽</Text>
-                <Text style={styles.daysWay}>{(VARS.daysPost%10 === 1 && VARS.daysPost%100 !== 11)?VARS.daysPost + " рабочий день":VARS.daysPost + " рабочих дня"}</Text>
-                <Text style={styles.daysInstallation}>{(VARS.daysInstall%10 === 1 && VARS.daysInstall%100 !== 11)?VARS.daysInstall + " рабочий день":VARS.daysInstall + " рабочих дней"}</Text>
-                <Text style={styles.daysStarting}>{(VARS.daysStartingWork%10 === 1 && VARS.daysStartingWork%100 !== 11)?VARS.daysStartingWork + " рабочий день":VARS.daysStartingWork + " рабочих дней"}</Text>
-                <Text style={styles.daysSumm}>{(VARS.daySumm%10 === 1 && VARS.daySumm%100 !== 11)?VARS.daySumm + " рабочий день":VARS.daySumm + " рабочих дней"}</Text>
+                <Text style={styles.daysWay}>{daysRus(VARS.daysPost)}</Text>
+                <Text style={styles.daysInstallation}>{daysRus(VARS.daysInstall)}</Text>
+                <Text style={styles.daysStarting}>{daysRus(VARS.daysStartingWork)}</Text>
+                <Text style={styles.daysSumm}>{daysRus(VARS.daySumm)}</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >

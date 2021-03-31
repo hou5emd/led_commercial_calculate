@@ -94,7 +94,7 @@ export function ScreenSize() {
                     <option value={[listSizeW.w2,listSizeH.h2]}>Экран {listSizeW.w2} x {listSizeH.h2}</option>
                 </select>
             </label>
-            <button className={"bt primary1-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
+            <button className={"bt second-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
             <button className={"bt primary1-bt"} onClick={submitSize}>Следующий шаг</button>
         </div>        
     );

@@ -12,9 +12,17 @@
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/config/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/config/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsThree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/personals.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/personals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tapeofcabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeofcabinet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +90,7 @@
       <workItem from="1616315083080" duration="5438000" />
       <workItem from="1616400543364" duration="93399000" />
       <workItem from="1616705794090" duration="52410000" />
-      <workItem from="1617050019038" duration="5181000" />
+      <workItem from="1617050019038" duration="11682000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>

@@ -45,7 +45,7 @@ export class DaysInstall extends Component {
                     <input type="number" placeholder={"Дней"} onChange={({target}) => {this.setState({daysStartingWork: target.value})}}/>
                 </label>
 
-                <button className={"bt primary1-bt"} onClick={() => {this.stepUpDwn(-1)}}>Шаг назад</button>
+                <button className={"bt second-bt"} onClick={() => {this.stepUpDwn(-1)}}>Шаг назад</button>
                 <button className={"bt primary1-bt"} onClick={() => {this.stepUpDwn(1)}}>Следующий шаг</button>
             </div>
         );
