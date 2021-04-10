@@ -67,7 +67,7 @@ export class AddonsTwo extends React.Component {
     nextStep = () => {
         const [context, setContext] = this.context;
         if (VARS.selectedInstallations !== null && VARS.selectedVideoCpu !== null && VARS.selectedElectroBox !== null){
-            setContext(7);
+            setContext(context+1);
         } else {
             alert("Индиана Джонс выбирал и ты давай!");
         }

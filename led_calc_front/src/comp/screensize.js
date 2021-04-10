@@ -68,7 +68,7 @@ export function ScreenSize() {
                 console.log(VARS.shablon);
             });
 
-            setContext(5);
+            setContext(context+1);
         }
     }
 

@@ -18,7 +18,7 @@ const TAPE_PROD = gql`
 export function SelTapeProd (){
     const { loading, error, data } = useQuery(TAPE_PROD);
     const [context, setContext] = useContext(CalcStateContext);
-    const [modules, setModules] = useState(<p className={'wait'}>Жду выбора типа размещения...</p>);
+    const [modules, setModules] = useState(<ListModules typeOfProductID={VARS.typeOfProductID}/>);
 
 
 

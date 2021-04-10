@@ -61,7 +61,9 @@ class ListModules extends React.Component {
     }
 
     componentDidMount() {
-        this.dataModules();
+        if (this.props.typeOfProductID) {
+            this.dataModules();
+        }
     }
     componentDidUpdate(prevProps) {
         if (prevProps.typeOfProductID !== this.props.typeOfProductID){
@@ -85,7 +87,7 @@ class ListModules extends React.Component {
 
         return (
             <div className={'screen-size'}>
-                <select onChange={(e) => {this.getLedModule(e)}}>
+                <select onChange={(e) => {this.getLedModule(e)}} value={VARS.module.id}>
                     <option disabled={true} selected>Выберите модуль</option>
                     {selListModule}
                 </select>

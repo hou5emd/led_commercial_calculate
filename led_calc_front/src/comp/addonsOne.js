@@ -92,7 +92,7 @@ export class AddonsOne extends React.Component {
         if (VARS.selectedPC !== null && VARS.selectedSCRD !== null && VARS.selectedMonitor !== null) {
 
             console.log(VARS);
-            setContext(6);
+            setContext(context+1);
         } else {
             alert("Выбирай правильно и с умом!");
         }

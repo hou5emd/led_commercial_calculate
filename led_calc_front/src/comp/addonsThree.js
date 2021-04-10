@@ -71,7 +71,7 @@ export class AddonsThree extends React.Component{
         if (VARS.selectedElectroProjects !== null && VARS.selectedProjectKM !== null && VARS.selectedAgree !== null){
 
             console.table(VARS);
-            setContext(8);
+            setContext(context+1);
         } else {
             alert("Индиана Джонс выбирал и ты давай!");
         }

@@ -9,7 +9,7 @@ import Cookie from "js-cookie";
 import Auth from "./comp/auth";
 
 import { ScreenSize } from './comp/screensize';
-import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer'
+import { PDFDownloadLink, Document, Page, PDFViewer } from '@react-pdf/renderer'
 import { MyDocument } from './comp/testPDF'
 import { AddonsOne } from './comp/addonsOne'
 import { AddonsTwo } from  './comp/addonsTwo'
@@ -53,13 +53,13 @@ function App (){
         });
         return (
             <div className={"application"}>
-                <div className={"main-calc"}>
+
                     <ApolloProvider client={VARS.client}>
 
                         <CalcStateContext.Provider value={[context, setContext]}>
                             <CalcStateContext.Consumer>
                                 {([context]) => {
-                                    switch (context) {
+                                    /*switch (context) {
                                         case 1:
                                             return <SelTapeProd/>;
                                             break;
@@ -99,14 +99,50 @@ function App (){
                                             break;
                                         default:
                                             <p>Упс</p>
-                                    }
+                                    }*/
+                                    return (
+                                        <div className={"main-calc"}>
+                                            <div hidden={context==1?false:true}>
+                                                <SelTapeProd/>
+                                            </div>
+                                            <div hidden={context==2?false:true}>
+                                                <ScreenSize/>
+                                            </div>
+                                            <div hidden={context==3?false:true}>
+                                                <AddonsOne/>
+                                            </div>
+                                            <div hidden={context==4?false:true}>
+                                                <AddonsTwo/>
+                                            </div>
+                                            <div hidden={context==5?false:true}>
+                                                <AddonsThree/>
+                                            </div>
+                                            <div hidden={context==6?false:true}>
+                                                {context >= 6?<PriceUpAndSale/>:''}
+                                            </div>
+                                            <div hidden={context==7?false:true}>
+                                                <DaysInstall/>
+                                            </div>
+                                            <div hidden={context==8?false:true}>
+                                                <UsersList/>
+                                            </div>
+                                            <div hidden={context==9?false:true}>
+                                                <Personals />
+                                            </div>
+                                            <div hidden={context==10?false:true}>
+                                                {context >= 10?<PDFViewer>
+                                                                <MyDocument />
+                                                            </PDFViewer>:''}
+                                            </div>
+                                        </div>
+                                    )
                                 }}
                             </CalcStateContext.Consumer>
                         </CalcStateContext.Provider>
 
 
                     </ApolloProvider>
-                </div>
+
 
                 <div className={"footer"}>
                     <button className={"bt second-bt"} onClick={()=>{

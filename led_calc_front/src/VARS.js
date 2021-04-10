@@ -60,7 +60,7 @@ const VARS = {
     priceOutLED:null, //Прайс для кп
 
     selectedPC:null,//Выбранный пк
-    pcPrice:null,//Цена компа
+    pcPrice:0,//Цена компа
     selectedSCRD:null,//Выбранная отправляющая
     selectedSCRDcount:1,//Колличество отправляющих
     scrdPrice:null,//Цена всех отправляшек
@@ -86,7 +86,7 @@ const VARS = {
 
 
 function numberWithSpacesInt(x) {
-    
+
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   }
 function numberWithSpacesFloat(x) {
