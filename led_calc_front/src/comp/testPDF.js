@@ -102,7 +102,7 @@ function daysRus(x){
     }
 }
 // Create Document Component
-export const MyDocument = () => (
+export const MyDocument = (props) => (
     <Document>
         <Page size="A4" orientation="landscape" >
             <View >
@@ -139,7 +139,7 @@ export const MyDocument = () => (
                 <Text style={styles.screenSize}>{VARS.screenSizeWidth} x {VARS.screenSizeHeight}</Text>
                 <Text style={styles.screenResolution}>{VARS.screenResolutionW} x {VARS.screenResolutionH}</Text>
                 <Text style={styles.cabinetSumm}>{(VARS.module.moduleHeight === VARS.cabinet.height)?"Экран модульный":VARS.cabinetSumm}</Text>
-                <Text style={styles.screenWeight}>{VARS.screenWeight}</Text>
+                <Text style={styles.screenWeight}>{VARS.screenWeight.toFixed(0)}</Text>
                 <Text style={styles.screenService}>{VARS.cabinet.tapeOfService}</Text>
                 <Text style={styles.screenTape}>{VARS.screenTape}</Text>
                 <Text style={styles.kandel}>{VARS.module.kandel}</Text>

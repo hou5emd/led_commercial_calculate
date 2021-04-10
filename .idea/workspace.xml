@@ -14,14 +14,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsThree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/personals.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/personals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tapeofcabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeofcabinet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tapeproduktion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
     </list>
@@ -49,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/led_calc_front/src/comp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -90,7 +85,12 @@
       <workItem from="1616315083080" duration="5438000" />
       <workItem from="1616400543364" duration="93399000" />
       <workItem from="1616705794090" duration="52410000" />
-      <workItem from="1617050019038" duration="11682000" />
+      <workItem from="1617050019038" duration="11683000" />
+      <workItem from="1617194950464" duration="66000" />
+      <workItem from="1617249833305" duration="1896000" />
+      <workItem from="1617607677736" duration="1801000" />
+      <workItem from="1617709840490" duration="20000" />
+      <workItem from="1617945814627" duration="13144000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
@@ -161,6 +161,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1837" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1616439275835" />
+    <state x="675" y="242" key="RollbackChangesDialog" timestamp="1618087832302">
+      <screen x="0" y="0" width="1854" height="1080" />
+    </state>
+    <state x="675" y="242" key="RollbackChangesDialog/0.0.1854.1080@0.0.1854.1080" timestamp="1618087832302" />
     <state x="430" y="185" key="SettingsEditor" timestamp="1615621927674">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

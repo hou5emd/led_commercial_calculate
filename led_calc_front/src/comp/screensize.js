@@ -88,15 +88,17 @@ export function ScreenSize() {
                 После ввода размеров выберите подходящий вариант экрана
                 <select onChange={({target}) => selSizes(target)}>
                     <option disabled selected>Выбери вариант</option>
-                    <option value={([listSizeW.w1,listSizeH.h1])}>Экран {listSizeW.w1} x {listSizeH.h1}</option>
-                    <option value={[listSizeW.w2,listSizeH.h1]}>Экран {listSizeW.w2} x {listSizeH.h1}</option>
-                    <option value={[listSizeW.w1,listSizeH.h2]}>Экран {listSizeW.w1} x {listSizeH.h2}</option>
-                    <option value={[listSizeW.w2,listSizeH.h2]}>Экран {listSizeW.w2} x {listSizeH.h2}</option>
+                    {(listSizeW.w1 > 0 && listSizeH.h1 > 0)?<option value={([listSizeW.w1,listSizeH.h1])}>Экран {listSizeW.w1} x {listSizeH.h1}</option>:''}
+                    {(listSizeW.w2 > 0 && listSizeH.h1 > 0)?<option value={[listSizeW.w2,listSizeH.h1]}>Экран {listSizeW.w2} x {listSizeH.h1}</option>:''}
+                    {(listSizeW.w1 > 0 && listSizeH.h2 > 0)?<option value={[listSizeW.w1,listSizeH.h2]}>Экран {listSizeW.w1} x {listSizeH.h2}</option>:''}
+                    {(listSizeW.w2 > 0 && listSizeH.h2 > 0)?<option value={[listSizeW.w2,listSizeH.h2]}>Экран {listSizeW.w2} x {listSizeH.h2}</option>:''}
+
+
                 </select>
             </label>
             <button className={"bt second-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
             <button className={"bt primary1-bt"} onClick={submitSize}>Следующий шаг</button>
-        </div>        
+        </div>
     );
 }
 

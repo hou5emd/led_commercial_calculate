@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { VARS } from '../VARS.js';
 import { useQuery } from 'react-apollo';
 import { gql } from 'apollo-boost';
+import ListModules from './tepeoflednodule'
 import { CalcStateContext } from './contexts';
 
 
@@ -17,6 +18,9 @@ const TAPE_PROD = gql`
 export function SelTapeProd (){
     const { loading, error, data } = useQuery(TAPE_PROD);
     const [context, setContext] = useContext(CalcStateContext);
+    const [modules, setModules] = useState(<p className={'wait'}>Жду выбора типа размещения...</p>);
+
+
 
     if (loading) return (
         <div>Подождите идет загрузка..</div>
@@ -24,31 +28,29 @@ export function SelTapeProd (){
     if (error) return `Error! ${error.message}`;
 
     const getProducts = (e) => {
-        console.log(context);
+        VARS.cabinet.id = -1;
         VARS.typeOfProductID = e.target.value;
         console.log(VARS.typeOfProductID);
-    }
+        setModules(<ListModules typeOfProductID={VARS.typeOfProductID}/>);
 
-    const nextStep = () => {
-        if (VARS.typeOfProductID !== null) {
-            setContext(2);
-        } else {
-            alert("Вы ничего не выбрали")
-        }
-    }
 
+
+
+
+
+    }
 
         return (
             <div className={'tapeOfProd'}>
-                <select onChange={(e) => {getProducts(e)}}>
-                    <option disabled={true} selected value={null}>Выберите тип продукции</option>
+                <select onChange={(e) => {getProducts(e)}} value={VARS.typeOfProductID}>
+                    <option disabled={true} selected value={null}>Выберите тип размещения</option>
                     {data.tipyProdukcziis.map(item => (
                         <option value={item.id}>
                             {item.tapeName}
                         </option>
                     ))}
                 </select>
-                <button className={"bt primary1-bt"} onClick={nextStep}>Следующий шаг</button>
+                {modules}
             </div>
 
     );

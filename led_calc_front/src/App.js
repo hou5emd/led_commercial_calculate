@@ -7,8 +7,7 @@ import logo from './img/logo-dark.png'
 import { CalcStateContext, LoginContext } from'./comp/contexts';
 import Cookie from "js-cookie";
 import Auth from "./comp/auth";
-import ListModules from './comp/tepeoflednodule';
-import { SelCabinet } from './comp/tapeofcabinet'
+
 import { ScreenSize } from './comp/screensize';
 import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer'
 import { MyDocument } from './comp/testPDF'
@@ -65,35 +64,29 @@ function App (){
                                             return <SelTapeProd/>;
                                             break;
                                         case 2:
-                                            return <ListModules/>;
-                                            break;
-                                        case 3:
-                                            return <SelCabinet/>
-                                            break;
-                                        case 4:
                                             return <ScreenSize/>
                                             break;
-                                        case 5:
+                                        case 3:
                                             return <AddonsOne/>
                                             break;
-                                        case 6:
+                                        case 4:
                                             return <AddonsTwo/>
                                             break;
-                                        case 7:
+                                        case 5:
                                             return <AddonsThree/>
-                                        case 8:
+                                        case 6:
                                             return <PriceUpAndSale/>
                                             break;
-                                        case 9:
+                                        case 7:
                                             return <DaysInstall/>
                                             break;
-                                        case 10:
+                                        case 8:
                                             return <UsersList/>
                                             break;
-                                        case 11:
+                                        case 9:
                                             return <Personals />
                                             break;
-                                        case 12:
+                                        case 10:
                                             return (
 
                                                 <div>
@@ -114,6 +107,7 @@ function App (){
 
                     </ApolloProvider>
                 </div>
+
                 <div className={"footer"}>
                     <button className={"bt second-bt"} onClick={()=>{
                         setContext(1);

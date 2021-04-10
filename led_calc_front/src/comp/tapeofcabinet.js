@@ -10,7 +10,7 @@ export function SelCabinet(){
     );
     const nextStep = () => {
         if (VARS.cabinet.id >= 0) {
-            setContext(4);
+            setContext(context+1);
         } else {
             alert("Вы ничего не выбрали")
         }
@@ -24,11 +24,11 @@ export function SelCabinet(){
 
     return(
         <div>
-            <select onChange={(e) => ChangeCabinet(e)}>
+            <select onChange={(e) => ChangeCabinet(e)} >
                 <option disabled={true} selected value={null}>Выберите модель кабинета</option>
                 {tapeOfCabinetList}
             </select>
-            <button className={"bt second-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
+
             <button className={"bt primary1-bt"} onClick={nextStep}>Следующий шаг</button>
         </div>
     )
