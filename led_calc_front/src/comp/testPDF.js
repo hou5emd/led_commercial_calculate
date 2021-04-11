@@ -126,7 +126,7 @@ export const MyDocument = () => (
                 <Text style={styles.refreshRateHertz}>{VARS.module.refrashRateHertz}</Text>
                 <Text style={styles.cabinetSize}>{(VARS.module.moduleHeight === VARS.cabinet.height)?"-":VARS.cabinet.width + "x" + VARS.cabinet.height}</Text>
                 <Text style={styles.tapeOfService}>{VARS.cabinet.tapeOfService}</Text>
-                <Text style={styles.cabinetWeight}>{VARS.cabinet.weight}</Text>
+                <Text style={styles.cabinetWeight}>{VARS.screenWeight}</Text>
                 <Text style={styles.wattMaxM2}>{VARS.module.powerInputMaxM2}</Text>
                 <Text style={styles.wattAverM2}>{VARS.module.powerInputAverageM2}</Text>
                 <Text style={styles.contrast}>{VARS.module.contrast}</Text>
@@ -139,7 +139,7 @@ export const MyDocument = () => (
                 <Text style={styles.screenSize}>{VARS.screenSizeWidth} x {VARS.screenSizeHeight}</Text>
                 <Text style={styles.screenResolution}>{VARS.screenResolutionW} x {VARS.screenResolutionH}</Text>
                 <Text style={styles.cabinetSumm}>{(VARS.module.moduleHeight === VARS.cabinet.height)?"Экран модульный":VARS.cabinetSumm}</Text>
-                <Text style={styles.screenWeight}>{VARS.screenWeight}</Text>
+                <Text style={styles.screenWeight}>{VARS.cabinet.weight}</Text>
                 <Text style={styles.screenService}>{VARS.cabinet.tapeOfService}</Text>
                 <Text style={styles.screenTape}>{VARS.screenTape}</Text>
                 <Text style={styles.kandel}>{VARS.module.kandel}</Text>

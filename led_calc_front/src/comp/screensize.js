@@ -53,13 +53,19 @@ export function ScreenSize() {
             VARS.screenSizeWidth = VARS.screenCabinetWidth * VARS.cabinet.width;  //Расчет ширины в мм
             VARS.screenSizeHeight = VARS.screenCabinetHeigth * VARS.cabinet.height; //Расчет высоты  в мм
             VARS.cabinetSumm = VARS.screenCabinetWidth * VARS.screenCabinetHeigth; //Сумма кабинетов
-            VARS.screenWeight = VARS.cabinetSumm * VARS.cabinet.weight;
+            VARS.screenP = (VARS.screenSizeWidth * VARS.screenSizeHeight / 1000 / 1000);
+            if (VARS.cabinet.width === VARS.module.moduleWidth && VARS.cabinet.height === VARS.module.moduleHeight){
+                VARS.screenWeight = VARS.screenP * VARS.cabinet.weight;
+            } else {
+                VARS.screenWeight = VARS.cabinetSumm * VARS.cabinet.weight;
+            }
+
             VARS.priceInWork = VARS.cabinetSumm * VARS.cabinet.price * VARS.usdrub / 100 * (100 + VARS.cabinet.priceUp);
             (VARS.cabinet.width === VARS.module.moduleWidth && VARS.cabinet.height === VARS.module.moduleHeight)?VARS.screenTape = "Модульный":VARS.screenTape = "Кабинетный"
             console.log("Размер экр ", VARS.screenSizeWidth, "ш x ", VARS.screenSizeHeight, "в. Количество кабинетов: ", VARS.cabinetSumm, "Цена в рублях: ", VARS.priceInWork);
             VARS.screenResolutionW = VARS.screenSizeWidth/VARS.module.moduleWidth*VARS.module.resolutionWidth; //Разрешение по ширине
             VARS.screenResolutionH = VARS.screenSizeHeight/VARS.module.moduleHeight*VARS.module.resolutionHeight;//Разрешение по высоте
-            VARS.screenP = (VARS.screenSizeWidth * VARS.screenSizeHeight / 1000 / 1000);
+
             VARS.maxKWT = (VARS.screenP * VARS.module.powerInputMaxM2 / 1000);
             VARS.avrKWT = (VARS.screenP * VARS.module.powerInputAverageM2 / 1000);
             console.table(VARS.screenP,VARS.maxKWT,VARS.avrKWT);
@@ -88,15 +94,15 @@ export function ScreenSize() {
                 После ввода размеров выберите подходящий вариант экрана
                 <select onChange={({target}) => selSizes(target)}>
                     <option disabled selected>Выбери вариант</option>
-                    <option value={([listSizeW.w1,listSizeH.h1])}>Экран {listSizeW.w1} x {listSizeH.h1}</option>
-                    <option value={[listSizeW.w2,listSizeH.h1]}>Экран {listSizeW.w2} x {listSizeH.h1}</option>
-                    <option value={[listSizeW.w1,listSizeH.h2]}>Экран {listSizeW.w1} x {listSizeH.h2}</option>
-                    <option value={[listSizeW.w2,listSizeH.h2]}>Экран {listSizeW.w2} x {listSizeH.h2}</option>
+                    {(listSizeW.w1 > 0 && listSizeH.h1 > 0)?<option value={([listSizeW.w1,listSizeH.h1])}>Экран {listSizeW.w1} x {listSizeH.h1}</option>:''}
+                    {(listSizeW.w2 > 0 && listSizeH.h1 > 0)?<option value={[listSizeW.w2,listSizeH.h1]}>Экран {listSizeW.w2} x {listSizeH.h1}</option>:''}
+                    {(listSizeW.w1 > 0 && listSizeH.h2 > 0)?<option value={[listSizeW.w1,listSizeH.h2]}>Экран {listSizeW.w1} x {listSizeH.h2}</option>:''}
+                    {(listSizeW.w2 > 0 && listSizeH.h2 > 0)?<option value={[listSizeW.w2,listSizeH.h2]}>Экран {listSizeW.w2} x {listSizeH.h2}</option>:''}
                 </select>
             </label>
             <button className={"bt second-bt"} onClick={() => {setContext(context-1)}}>Шаг назад</button>
             <button className={"bt primary1-bt"} onClick={submitSize}>Следующий шаг</button>
-        </div>        
+        </div>
     );
 }
 

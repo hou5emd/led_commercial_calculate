@@ -18,12 +18,12 @@ html{
 #root{
   display: flex;
   width: 100vw;
-  height: 100vh;
+
   vertical-align: center;
   justify-content: center;
 }
 #root>div{
-  margin: auto;
+  margin: 15px auto auto 15px;;
   max-width: 100%;
   padding: 15px;
 }
@@ -35,14 +35,15 @@ label{
   flex-direction: column;
   display: flex;
   align-items: start;
-  
+
 }
 select, input {
   min-width: 290px;
   max-width: 100%;
   display: block;
-  font-size: 1.125rem;
-  padding: 1.125rem 1rem;
+  line-height: 1rem;
+  font-size: 1rem;
+  padding: .2rem 1rem;
   color: inherit;
   border: 1px solid #c9c9ca;
   border-radius: 4px;
