@@ -18,9 +18,13 @@
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/screensize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

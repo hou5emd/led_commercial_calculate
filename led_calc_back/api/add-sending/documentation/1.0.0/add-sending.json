@@ -545,6 +545,9 @@
             "type": "integer",
             "default": 0
           },
+          "maxPx": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -562,6 +565,9 @@
           "priceUp": {
             "type": "integer",
             "default": 0
+          },
+          "maxPx": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

@@ -1,4 +1,5 @@
 import React, {useContext, useState} from 'react';
+import ReactDOM from 'react-dom';
 import { VARS } from './VARS.js';
 import { ApolloProvider } from 'react-apollo';
 import { SelTapeProd } from './comp/tapeproduktion'
@@ -107,7 +108,11 @@ function App (){
                                         default:
                                             <p>Упс</p>
                                     }
+                                    if (context > 4) {
+                                        ReactDOM.render(<MyDocument/>, document.getElementById('preview'))
+                                    }
                                 }}
+
                             </CalcStateContext.Consumer>
                         </CalcStateContext.Provider>
 
@@ -139,5 +144,6 @@ function logout(){
     window.location.reload();
 
 };
+
 
 export default App;

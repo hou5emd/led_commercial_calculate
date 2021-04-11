@@ -20,6 +20,9 @@
     "priceUp": {
       "type": "integer",
       "default": 0
+    },
+    "maxPx": {
+      "type": "biginteger"
     }
   }
 }

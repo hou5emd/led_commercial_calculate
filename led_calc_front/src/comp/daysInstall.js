@@ -17,11 +17,16 @@ export class DaysInstall extends Component {
     stepUpDwn = (x) => {
         const [context, setContext] = this.context
         if (this.state.daysPost !== null && this.state.daysInstall !== null && this.state.daysStartingWork !== null ) {
-            VARS.daysPost = this.state.daysPost
-            VARS.daysInstall = this.state.daysInstall
-            VARS.daysStartingWork = this.state.daysStartingWork
-            VARS.daySumm = parseInt(this.state.daysPost,10) + parseInt(this.state.daysInstall,10) + parseInt(this.state.daysStartingWork,10)
-            setContext(context + x);
+            if (this.state.daysPost > 0 && this.state.daysInstall > 0 && this.state.daysStartingWork > 0){
+                VARS.daysPost = this.state.daysPost
+                VARS.daysInstall = this.state.daysInstall
+                VARS.daysStartingWork = this.state.daysStartingWork
+                VARS.daySumm = parseInt(this.state.daysPost,10) + parseInt(this.state.daysInstall,10) + parseInt(this.state.daysStartingWork,10)
+                setContext(context + x);
+            }else {
+                alert('Не все данные заполнены!')
+            }
+
         } else {
             alert('Не все данные заполнены!')
         }
@@ -33,16 +38,16 @@ export class DaysInstall extends Component {
             <div>
                 <label>
                     Введите срок поставки
-                    <input type="number" placeholder={"Дней"} onChange={({target}) => {this.setState({daysPost: target.value})}}/>
+                    <input type="number" placeholder={"Минимум 1 день"} onChange={({target}) => {this.setState({daysPost: target.value})}}/>
                 </label>
                 <label>
                     Введите срок монтажа
-                    <input type="number" placeholder={"Дней"} onChange={({target}) => {this.setState({daysInstall: target.value})}}/>
+                    <input type="number" placeholder={"Минимум 1 день"} onChange={({target}) => {this.setState({daysInstall: target.value})}}/>
                 </label>
 
                 <label>
                     Введите срок пусконаладки
-                    <input type="number" placeholder={"Дней"} onChange={({target}) => {this.setState({daysStartingWork: target.value})}}/>
+                    <input type="number" placeholder={"Минимум 1 день"} onChange={({target}) => {this.setState({daysStartingWork: target.value})}}/>
                 </label>
 
                 <button className={"bt second-bt"} onClick={() => {this.stepUpDwn(-1)}}>Шаг назад</button>
