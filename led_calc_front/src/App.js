@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import { VARS } from './VARS.js';
 import { ApolloProvider } from 'react-apollo';
@@ -11,7 +11,7 @@ import Auth from "./comp/auth";
 import ListModules from './comp/tepeoflednodule';
 import { SelCabinet } from './comp/tapeofcabinet'
 import { ScreenSize } from './comp/screensize';
-import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer'
+import { PDFDownloadLink, Document, Page, PDFViewer } from '@react-pdf/renderer'
 import { MyDocument } from './comp/testPDF'
 import { AddonsOne } from './comp/addonsOne'
 import { AddonsTwo } from  './comp/addonsTwo'
@@ -31,6 +31,12 @@ function App (){
         day: 'numeric',
         timezone: 'UTC'
     };
+    useEffect(()=>{
+
+        date = new Date()
+        console.log(date)
+    })
+
     const [context, setContext] = useState(1);
     const [login, setLogin] = useState(0)
     if (!Cookie.get("token") && !Cookie.get("login")){
@@ -55,6 +61,7 @@ function App (){
         });
         return (
             <div className={"application"}>
+
                 <div className={"main-calc"}>
                     <ApolloProvider client={VARS.client}>
 
@@ -63,7 +70,7 @@ function App (){
                                 {([context]) => {
                                     switch (context) {
                                         case 1:
-                                            return <SelTapeProd/>;
+                                            return <><SelTapeProd/><UsersList/></>;
                                             break;
                                         case 2:
                                             return <ListModules/>;
@@ -89,27 +96,29 @@ function App (){
                                             return <DaysInstall/>
                                             break;
                                         case 10:
-                                            return <UsersList/>
-                                            break;
-                                        case 11:
                                             return <Personals />
                                             break;
-                                        case 12:
+                                        case 11:
                                             return (
-
-                                                <div>
-                                                    <PDFDownloadLink document={<MyDocument/>}
+                                                <>
+                                                    <PDFViewer><MyDocument date={date}/></PDFViewer>
+                                                    <PDFDownloadLink  document={<MyDocument date={date}/>}
                                                                      fileName={date.toLocaleString("ru",options) + "_" + VARS.priceUP + "PU_" + VARS.priceSale + "PS" + ".pdf"}>
                                                         {({blob, url, loading, error}) => (loading ? 'Собираю кп...' : 'Скачать!')}
                                                     </PDFDownloadLink>
-                                                </div>
+                                                    <button className={"bt second-bt"} onClick={()=>{
+                                                        setContext(context-1)
+                                                    }}>Шаг назад</button>
+                                                </>
+
                                             )
                                             break;
                                         default:
                                             <p>Упс</p>
                                     }
                                     if (context > 4) {
-                                        ReactDOM.render(<MyDocument/>, document.getElementById('preview'))
+                                        let doc = <PDFViewer><MyDocument/></PDFViewer>
+                                        ReactDOM.render(doc, document.getElementById('preview'))
                                     }
                                 }}
 

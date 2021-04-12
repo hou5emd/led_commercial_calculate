@@ -29,7 +29,7 @@ async function usdrub(){
     }
 
 }
-//usdrub();
+usdrub();
 
 const VARS = {
     URL: process.env.REACT_APP_URL,
@@ -86,7 +86,7 @@ const VARS = {
 
 
 function numberWithSpacesInt(x) {
-    
+
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   }
 function numberWithSpacesFloat(x) {

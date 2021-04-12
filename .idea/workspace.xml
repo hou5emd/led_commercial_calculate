@@ -17,14 +17,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
+      <change afterPath="$PROJECT_DIR$/led_calc_front/src/comp/header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/documentation/1.0.0/add-sending.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/api/add-sending/models/add-sending.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_back/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/VARS.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/VARS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/daysInstall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/testPDF.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/usersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/usersList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +102,7 @@
       <workItem from="1616400543364" duration="93399000" />
       <workItem from="1616705794090" duration="52410000" />
       <workItem from="1617050019038" duration="11682000" />
+      <workItem from="1618239276822" duration="14566000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
@@ -155,9 +161,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Start pdf render" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617050585433">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="689" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618258955077">
+      <screen x="0" y="0" width="1854" height="1080" />
     </state>
+    <state x="689" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1854.1080@0.0.1854.1080" timestamp="1618258955077" />
     <state x="690" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1617050585433" />
     <state x="659" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615661387569">
       <screen x="0" y="0" width="1858" height="1080" />
@@ -179,6 +186,10 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1837" height="295" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1616439275835" />
+    <state x="675" y="242" key="RollbackChangesDialog" timestamp="1618239540630">
+      <screen x="0" y="0" width="1854" height="1080" />
+    </state>
+    <state x="675" y="242" key="RollbackChangesDialog/0.0.1854.1080@0.0.1854.1080" timestamp="1618239540630" />
     <state x="430" y="185" key="SettingsEditor" timestamp="1615621927674">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

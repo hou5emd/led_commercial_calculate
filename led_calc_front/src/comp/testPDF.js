@@ -102,14 +102,14 @@ function daysRus(x){
     }
 }
 // Create Document Component
-export const MyDocument = () => (
+export const MyDocument = (props) => (
     <Document>
         <Page size="A4" orientation="landscape" >
             <View >
                 <Image src={VARS.URL + VARS.shablon.str1[0].url.slice(1)} style={styles.pageBG} />
                 <Text style={styles.text_1page}>{numberWithSpacesInt(VARS.screenSizeWidth)} x {numberWithSpacesInt(VARS.screenSizeHeight)} мм</Text>
                 <Text style={styles.text_1page_person}>Для: {VARS.persona}</Text>
-                <Text style={styles.text_1page_date}>Дата: {date.toLocaleString("ru", options)}</Text>
+                <Text style={styles.text_1page_date}>Дата: {props.date.toLocaleString("ru", options)}</Text>
             </View>
         </Page>
         <Page size="A4" orientation="landscape" >

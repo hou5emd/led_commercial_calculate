@@ -16,20 +16,25 @@ export class DaysInstall extends Component {
 
     stepUpDwn = (x) => {
         const [context, setContext] = this.context
-        if (this.state.daysPost !== null && this.state.daysInstall !== null && this.state.daysStartingWork !== null ) {
-            if (this.state.daysPost > 0 && this.state.daysInstall > 0 && this.state.daysStartingWork > 0){
-                VARS.daysPost = this.state.daysPost
-                VARS.daysInstall = this.state.daysInstall
-                VARS.daysStartingWork = this.state.daysStartingWork
-                VARS.daySumm = parseInt(this.state.daysPost,10) + parseInt(this.state.daysInstall,10) + parseInt(this.state.daysStartingWork,10)
-                setContext(context + x);
-            }else {
+        if (x>0){
+            if (this.state.daysPost !== null && this.state.daysInstall !== null && this.state.daysStartingWork !== null ) {
+                if (this.state.daysPost > 0 && this.state.daysInstall > 0 && this.state.daysStartingWork > 0){
+                    VARS.daysPost = this.state.daysPost
+                    VARS.daysInstall = this.state.daysInstall
+                    VARS.daysStartingWork = this.state.daysStartingWork
+                    VARS.daySumm = parseInt(this.state.daysPost,10) + parseInt(this.state.daysInstall,10) + parseInt(this.state.daysStartingWork,10)
+                    setContext(context + x);
+                }else {
+                    alert('Не все данные заполнены!')
+                }
+
+            } else {
                 alert('Не все данные заполнены!')
             }
-
         } else {
-            alert('Не все данные заполнены!')
+            setContext(context + x);
         }
+
 
     }
 

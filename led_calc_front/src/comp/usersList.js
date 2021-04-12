@@ -28,7 +28,7 @@ export class UsersList extends Component {
                     console.log(data);
                     //resolve the promise to set loading to false in SignUp form
                     resolve(data);
-                    setContext(context+1);
+
 
 
                 })
@@ -43,9 +43,7 @@ export class UsersList extends Component {
 
     render() {
 
-        return (
-            <div>Загрузка контактных данных</div>
-        );
+        return <div></div>
     }
 }
 

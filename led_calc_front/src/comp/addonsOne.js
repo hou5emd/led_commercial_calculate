@@ -1,8 +1,16 @@
 import React, {useContext, createRef} from 'react'
+import ReactDOM from 'react-dom'
+import ReactHtmlParser from 'react-html-parser';
 import { VARS } from '../VARS'
 import { CalcStateContext } from './contexts'
 import {checkStatus, parseJSON} from "./resptests";
 
+function bText(text){
+
+            console.log(text)
+            return "<b>${text}</b>";
+
+}
 
 export class AddonsOne extends React.Component {
     state={
@@ -113,14 +121,16 @@ export class AddonsOne extends React.Component {
                 {this.state.monitorsList.map((item,key) => <option value={key}>{item.monitorName}</option>)}
             </select>
         }
+        let b1 = "\<b\>"
+        let b2 = "\</b\>"
         let sendingsCard = <p>Загрузка списка отправляющих карт....</p>;
         if (this.state.downloadSC === true){
             sendingsCard = <select onChange={event => this.onChangeSCRD(event)}>
                 <option value="null" selected={true} disabled={true}>Выберите отправляющую карту</option>
-                {this.state.sendingCards.map((item,key) => <option value={key}>{item.sendControllerName}</option>)}
+                {this.state.sendingCards.map((item,key) => <option value={key}>{item.sendControllerName} ***{(item.price * VARS.usdrub / item.priceUp * 100).toFixed(0).toString()}₽*** (до {item.maxPx} пикс.)</option>)}
             </select>;
         }
-        let alert1 = <alert>Важно учитывать что разрешение будущего экрана {VARS.screenResolutionW} x {VARS.screenResolutionH}</alert>
+        let alert1 = <alert>Важно учитывать что экран имеет {VARS.screenResolutionW * VARS.screenResolutionH} пикс</alert>
         return (
             <div>
                 <label>Выберите управляющий компьютер
@@ -146,3 +156,5 @@ export class AddonsOne extends React.Component {
     }
 
 }
+
+
