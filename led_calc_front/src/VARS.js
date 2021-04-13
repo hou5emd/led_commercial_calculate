@@ -79,7 +79,24 @@ const VARS = {
     selectedMonitor:null,//Выбранный монитор
     monitorPrice:null,//Цена монитора
 
+
+    percentLed:0, //Наценка на сам экран
+    percentGadjets:0, //Наценка на железки
+    percentAddons:0, //Наценка на допы
+
     fullPrice:0,//Цена проекта
+
+    funcPercent:(x,p) =>{
+        return x + (x/100*p)
+    },
+    funcElectroBox:(eb)=>{
+        if (eb > 0){
+
+            return eb * Math.log(eb)/Math.log(eb/VARS.screenP/300+VARS.screenP)*VARS.screenP;
+        } else {
+            return 0;
+        }
+    }
 
 
 };

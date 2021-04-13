@@ -93,7 +93,8 @@ export class AddonsTwo extends React.Component {
         if (this.state.installationsDWLD){
             installations = <select onChange={event => this.onChangeInstallations(event)}>
                 <option value="null" selected={true} disabled={true}>Выберите тип монтажа</option>
-                {this.state.installationsList.map((item,key) => <option value={key}>{item.installationTape}</option> )}
+                {this.state.installationsList.map((item,key) => <option value={key}>{item.installationTape}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price,item.priceUp)*VARS.screenP).toFixed(0).toString():"0"}₽***</option> )}
             </select>
         }
         //Рендер выбора видео проца
@@ -101,7 +102,8 @@ export class AddonsTwo extends React.Component {
         if (this.state.videoCpuDwld){
             videoCpus = <select onChange={event => this.onChangeVideoCpu(event)}>
                 <option value={null} selected={true} disabled={true}>Выберите видео процессор</option>
-                {this.state.videoCpuList.map((item,key) => <option value={key}>{item.videoCpuName}</option>)}
+                {this.state.videoCpuList.map((item,key) => <option value={key}>{item.videoCpuName}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price*VARS.usdrub,item.priceUp)).toFixed(0).toString():"0"}₽***</option>)}
             </select>
         }
         //Рендер выбора электро щита
@@ -109,7 +111,8 @@ export class AddonsTwo extends React.Component {
         if (this.state.electroBoxDWLD){
             electroBox = <select onChange={event => this.onChangeElectroBox(event)}>
                 <option value={null} selected={true} disabled={true}>Выберите электро-щит</option>
-                {this.state.electroBoxList.map((item,key) => <option value={key}>{item.electroBoxName}</option>)}
+                {this.state.electroBoxList.map((item,key) => <option value={key}>{item.electroBoxName}{" "}
+                    ***{(item.price !== 0)?(VARS.funcElectroBox(VARS.funcPercent(item.price,item.priceUp))).toFixed(0).toString():"0"}₽***</option>)}
             </select>
         }
         return (

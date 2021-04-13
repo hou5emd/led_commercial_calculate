@@ -111,14 +111,16 @@ export class AddonsOne extends React.Component {
         if (this.state.downloadPC === true){
             pcs = <select onChange={event => this.onChangePCS(event)}>
                 <option value="null" selected={true} disabled={true}>Выберите компьютер</option>
-                {this.state.pcs.map((item,key) => <option value={key}>{item.pcName}</option>)}
+                {this.state.pcs.map((item,key) => <option value={key}>{item.pcName}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price*VARS.usdrub,item.priceUp)).toFixed(0).toString():"0"}₽***</option>)}
             </select>;
         }
         let monitorSel = <p>Загрузка списка мониторов...</p>;
         if (this.state.monitorsDL){
             monitorSel = <select onChange={event => this.onChangeMonitor(event)}>
                 <option value={null} selected disabled>Выберите монитор</option>
-                {this.state.monitorsList.map((item,key) => <option value={key}>{item.monitorName}</option>)}
+                {this.state.monitorsList.map((item,key) => <option value={key}>{item.monitorName}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price*VARS.usdrub,item.priceUp)).toFixed(0).toString():"0"}₽***</option>)}
             </select>
         }
         let b1 = "\<b\>"
@@ -127,7 +129,8 @@ export class AddonsOne extends React.Component {
         if (this.state.downloadSC === true){
             sendingsCard = <select onChange={event => this.onChangeSCRD(event)}>
                 <option value="null" selected={true} disabled={true}>Выберите отправляющую карту</option>
-                {this.state.sendingCards.map((item,key) => <option value={key}>{item.sendControllerName} ***{(item.price * VARS.usdrub / item.priceUp * 100).toFixed(0).toString()}₽*** (до {item.maxPx} пикс.)</option>)}
+                {this.state.sendingCards.map((item,key) => <option value={key}>{item.sendControllerName}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price*VARS.usdrub,item.priceUp)).toFixed(0).toString():"0"}₽*** (до {item.maxPx} пикс.)</option>)}
             </select>;
         }
         let alert1 = <alert>Важно учитывать что экран имеет {VARS.screenResolutionW * VARS.screenResolutionH} пикс</alert>

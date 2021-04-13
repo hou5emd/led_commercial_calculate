@@ -7,8 +7,10 @@ import { CalcStateContext } from './contexts'
 
 
 function x(y){
-
     return  y + (y/100*VARS.priceUP) - (y + (y/100*VARS.priceUP))/100 * VARS.priceSale;
+}
+function percent(x,p){
+    return x + (x/100*p);
 }
 function countPrices(){
     VARS.pcPrice = VARS.selectedPC.price * VARS.usdrub; //Расчет цены пк в рублях
@@ -47,6 +49,21 @@ function countPrices(){
     VARS.projectKMPrice = x(VARS.projectKMPrice);
     VARS.agreementPrice = x(VARS.agreementPrice);
 
+    VARS.priceOutLED = percent(VARS.priceOutLED, VARS.percentLed);
+
+    VARS.installationPrice = percent(VARS.installationPrice,VARS.percentAddons);
+    VARS.electroProjectsPrice = percent(VARS.electroProjectsPrice,VARS.percentAddons);
+    VARS.projectKMPrice = percent(VARS.projectKMPrice,VARS.percentAddons);
+    VARS.agreementPrice = percent(VARS.agreementPrice,VARS.percentAddons);
+
+    VARS.pcPrice = percent(VARS.pcPrice, VARS.percentGadjets);
+    VARS.scrdPrice = percent(VARS.scrdPrice, VARS.percentGadjets);
+    VARS.videoCpuPrice = percent(VARS.videoCpuPrice, VARS.percentGadjets);
+    VARS.electroBoxPrice = percent(VARS.electroBoxPrice, VARS.percentGadjets);
+
+
+
+
     VARS.fullPrice = VARS.priceOutLED + VARS.pcPrice + VARS.scrdPrice + VARS.installationPrice + VARS.videoCpuPrice + VARS.electroBoxPrice + VARS.electroProjectsPrice + VARS.projectKMPrice + VARS.agreementPrice;
     VARS.priceFullImportants = VARS.priceOutLED + VARS.scrdPrice + VARS.pcPrice;
     VARS.priceFullAddons = VARS.installationPrice + VARS.videoCpuPrice + VARS.electroBoxPrice + VARS.electroProjectsPrice + VARS.projectKMPrice + VARS.agreementPrice;
@@ -61,6 +78,9 @@ function PriceUpAndSale(){
     const [upPriceValue, setUpPriceValue] = useState(0);
     const [sale, setSale] = useState(0);
     const [context, setContext] = useContext(CalcStateContext);
+    const [percentMontage, setPM] = useState(0);
+    const [percentLed, setPl] = useState(0);
+    const [percentAdd, setPa] = useState(0);
 
     const onChangeUpPrice = (e) =>{
         setUpPriceValue(e.target.value);
@@ -73,6 +93,20 @@ function PriceUpAndSale(){
         VARS.priceSale = parseInt(e.target.value);
         countPrices();
     }
+    const onChangePercentMontage = (target) =>{
+        VARS.percentAddons = parseInt(target.value);
+        setPM(VARS.percentAddons);
+
+    }
+    const onChangePercentLed = (target) => {
+        VARS.percentLed = parseInt(target.value);
+        setPl(VARS.percentLed);
+    }
+
+    const onChangePercentAdd = (target) =>{
+        VARS.percentGadjets = parseInt(target.value);
+        setPa(VARS.percentGadjets);
+    }
 
     const stepUpDwn = (x) => {
         countPrices();
@@ -81,11 +115,32 @@ function PriceUpAndSale(){
 
     return(
         <div className={"salePrice"}>
-            <span>{upPriceValue}% Наценки</span>
+            <span style={{fontWeight:"bold"}}>{percentLed}% наценки/скидки на LED экран</span><br/>
+            <input type="number" defaultValue={0} onChange={({target}) => onChangePercentLed(target)}/>
+            <span style={{marginBottom:"1rem",display:"block"}}>Цена экрана {VARS.priceOutLED.toFixed(2)}</span>
+
+            <span style={{fontWeight:"bold"}}>{percentAdd}% наценки/скидки на доп оборудование</span>
+            <input type="number" defaultValue={0} onChange={({target}) => onChangePercentAdd(target)}/>
+            <span style={{whiteSpace:"pre",marginBottom:"1rem",display:"block"}}>{
+                "ПК "+VARS.pcPrice.toFixed(2)+`\n`+
+                "Отправляющая карта "+VARS.scrdPrice.toFixed(2)+`\n`+
+                "Видео процессор "+VARS.videoCpuPrice.toFixed(2)+`\n`+
+                "Электрощит "+VARS.electroBoxPrice.toFixed(2)
+            }</span>
+            <span style={{fontWeight:"bold"}}>{percentMontage}% наценки/скидки на монтаж, проект и согласование</span>
+            <input type="number" defaultValue={0} onChange={({target}) => onChangePercentMontage(target)}/>
+            <span style={{whiteSpace:"pre",marginBottom:"1rem",display:"block"}}>{
+                "Монтаж "+VARS.installationPrice.toFixed(2)+`\n`+
+                "Электро проект "+VARS.electroProjectsPrice.toFixed(2)+`\n`+
+                "Проект МК "+VARS.projectKMPrice.toFixed(2)+`\n`+
+                "Согласование "+VARS.agreementPrice.toFixed(2)
+            }</span>
+
+            <span style={{fontWeight:"bold"}}>{upPriceValue}% Наценки общ.</span>
             <input type="range" min={0} max={100} step={1} defaultValue={0} onChange={event => onChangeUpPrice(event)}/>
-            <span>{sale}% Скидки</span>
+            <span style={{fontWeight:"bold"}}>{sale}% Скидки</span>
             <input type="range" min={0} max={20} step={1} defaultValue={0} onChange={event => onChangeSalePrice(event)}/>
-            <div>
+            <div style={{fontWeight:"bold",marginBottom:"1rem"}}>
                 Изменение цены проекта
                 <div>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))}</div>
             </div>

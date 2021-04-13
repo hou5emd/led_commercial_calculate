@@ -96,7 +96,8 @@ export class AddonsThree extends React.Component{
         if (this.state.electroProjectsDL){
             electroProjectsList = <select onChange={event => this.onChangeElectroProjects(event)}>
                 <option value={null} selected disabled>Выберите электро-проект</option>
-                {this.state.electroProjectsList.map((item,key) => <option value={key}>{item.tapeElectroProject}</option>)}
+                {this.state.electroProjectsList.map((item,key) => <option value={key}>{item.tapeElectroProject}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price,item.priceUp)).toFixed(0).toString():"0"}₽***</option>)}
             </select>
         }
         //Рендер проектовКМ
@@ -104,7 +105,8 @@ export class AddonsThree extends React.Component{
         if (this.state.projectKMDL){
             projectKM = <select onChange={event => this.onChangeProjectKM(event)}>
                 <option value={null} selected disabled>Выберите тип проекта констр. части</option>
-                {this.state.projectKMList.map((item,key) => <option value={key}>{item.projectConstrName}</option>)}
+                {this.state.projectKMList.map((item,key) => <option value={key}>{item.projectConstrName}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price,item.proceUp)).toFixed(0).toString():"0"}₽***</option>)}
             </select>
         }
         //рендор согласования
@@ -112,7 +114,8 @@ export class AddonsThree extends React.Component{
         if (this.state.admAgreeDL){
             admAgree = <select onChange={event => this.onChangeAdmAgree(event)}>
                 <option value={null} selected disabled>Выберите тип согласования</option>
-                {this.state.admAgreeList.map((item,key) => <option value={key}>{item.tapeAgreement}</option>)}
+                {this.state.admAgreeList.map((item,key) => <option value={key}>{item.tapeAgreement}{" "}
+                    ***{(item.price !== 0)?(VARS.funcPercent(item.price,item.priceUp)).toFixed(0).toString():"0"}₽***</option>)}
             </select>
         }
         return (
