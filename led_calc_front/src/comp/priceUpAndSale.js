@@ -122,11 +122,7 @@ function PriceUpAndSale(){
 
     const onChangeSalePrice = (e) =>{
         setSale(e.target.value);
-        /*if (e.target.value > 0){
-            setDSD("none")
-        } else {
-            setDSD("block")
-        }*/
+
         VARS.priceSale = parseInt(e.target.value);
         countPrices();
     }
@@ -155,20 +151,20 @@ function PriceUpAndSale(){
 
     return(
         <div className={"salePrice"}>
-            <span style={{display:`${displaySaleDot}`}} style={{fontWeight:"bold"}}>{percentLed}% наценки/скидки на LED экран</span><br/>
-            <input style={{marginBottom:"0.5rem",display:`${displaySaleDot}`}} type="range" min={-15} max={100} defaultValue={0} step={1} onChange={({target}) => onChangePercentLed(target)}/>
+            <span style={{display:`${displaySaleDot}`}} style={{fontWeight:"bold"}}>{VARS.percentLed}% наценки/скидки на LED экран</span><br/>
+            <input style={{marginBottom:"0.5rem",display:`${displaySaleDot}`}} type="range" min={-15} max={100} defaultValue={0} step={1} value={VARS.percentLed} onChange={({target}) => onChangePercentLed(target)}/>
             <span style={{marginBottom:"2rem",display:"block"}}>Цена экрана {numberWithSpacesFloat(VARS.priceOutLED.toFixed(2))}</span>
 
-            <span  style={{fontWeight:"bold",display:`${displaySaleDot}`}}>{percentAdd}% наценки/скидки на доп оборудование</span>
-            <input style={{marginBottom:"0.5rem",display:`${displaySaleDot}`}} type="range" min={-15} max={100} defaultValue={0} step={1} onChange={({target}) => onChangePercentAdd(target)}/>
+            <span  style={{fontWeight:"bold",display:`${displaySaleDot}`}}>{VARS.percentGadjets}% наценки/скидки на доп оборудование</span>
+            <input style={{marginBottom:"0.5rem",display:`${displaySaleDot}`}} type="range" min={-15} max={100} defaultValue={0} step={1} value={VARS.percentGadjets} onChange={({target}) => onChangePercentAdd(target)}/>
             <span style={{whiteSpace:"pre",marginBottom:"2rem",display:"block"}}>{
                 "ПК "+numberWithSpacesFloat(VARS.pcPrice.toFixed(2))+`\n`+
                 "Отправляющая карта "+numberWithSpacesFloat(VARS.scrdPrice.toFixed(2))+`\n`+
                 "Видео процессор "+numberWithSpacesFloat(VARS.videoCpuPrice.toFixed(2))+`\n`+
                 "Электрощит "+numberWithSpacesFloat(VARS.electroBoxPrice.toFixed(2))
             }</span>
-            <span style={{fontWeight:"bold",display:`${displaySaleDot}`}}>{percentMontage}% наценки/скидки на монтаж, проект и согласование</span>
-            <input style={{marginBottom:"0.5rem",display:`${displaySaleDot}`}} type="range" min={-15} max={100} defaultValue={0} step={1} onChange={({target}) => onChangePercentMontage(target)}/>
+            <span style={{fontWeight:"bold",display:`${displaySaleDot}`}}>{VARS.percentAddons}% наценки/скидки на монтаж, проект и согласование</span>
+            <input style={{marginBottom:"0.5rem",display:`${displaySaleDot}`}} type="range" min={-15} max={100} defaultValue={0} step={1} value={VARS.percentAddons} onChange={({target}) => onChangePercentMontage(target)}/>
             <span style={{whiteSpace:"pre",marginBottom:"2rem",display:"block"}}>
                 Монтаж {numberWithSpacesFloat(VARS.installationPrice.toFixed(2)).toString()}{`\n`}
                 Электро проект {numberWithSpacesFloat(VARS.electroProjectsPrice.toFixed(2))}{`\n`}
@@ -176,10 +172,8 @@ function PriceUpAndSale(){
                 Согласование {numberWithSpacesFloat(VARS.agreementPrice.toFixed(2))}
             </span>
 
-            <span style={{fontWeight:"bold"}}>{upPriceValue}% Наценки общ.</span>
-            <input type="range" min={0} max={100} step={1} defaultValue={0} onChange={event => onChangeUpPrice(event)}/>
-            <span style={{fontWeight:"bold", display:`${displaySale}`}}>{sale}% Скидки общ.</span>
-            <input style={{display:`${displaySale}`}} type="range" min={0} max={15} step={1} defaultValue={0} onChange={event => onChangeSalePrice(event)}/>
+
+
             <div style={{fontWeight:"bold",marginBottom:"1rem"}}>
                 Изменение цены проекта
                 <div>{numberWithSpacesFloat(VARS.fullPrice.toFixed(2))}</div>
