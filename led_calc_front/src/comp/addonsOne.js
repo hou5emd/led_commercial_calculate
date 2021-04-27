@@ -28,7 +28,7 @@ export class AddonsOne extends React.Component {
             const requestPC = await fetch(VARS.URL + 'add-pcs', {
                 headers: {
                     'Content-Type': 'application/json',
-                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjE2MDg1NDUwLCJleHAiOjE2MTg2Nzc0NTB9.S3iICAYvJlQvcuvzg42mQbqdvCfO4i0qQozz2iFszT4"
+                    "Authorization": VARS.AUTORIZ
                 }
             })
                 .then(checkStatus)

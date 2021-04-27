@@ -18,7 +18,8 @@
   <component name="ChangeListManager">
     <list default="true" id="875d1af3-6fd0-4bd6-ad64-64ecb9a08f37" name="Default Changelist" comment="Start pdf render">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/priceUpAndSale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/addonsOne.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" beforeDir="false" afterPath="$PROJECT_DIR$/led_calc_front/src/comp/tepeoflednodule.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,8 @@
       <workItem from="1616400543364" duration="93399000" />
       <workItem from="1616705794090" duration="52410000" />
       <workItem from="1617050019038" duration="11682000" />
-      <workItem from="1618239276822" duration="34164000" />
+      <workItem from="1618239276822" duration="34768000" />
+      <workItem from="1619523724099" duration="800000" />
     </task>
     <task id="LOCAL-00001" summary="Start...">
       <created>1615490650961</created>
@@ -187,11 +189,16 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="712" y="254" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1616448582990" />
-    <state x="635" y="139" width="584" height="801" key="find.popup" timestamp="1618287702833">
-      <screen x="0" y="0" width="1854" height="1080" />
+    <state x="636" y="139" width="585" height="801" key="find.popup" timestamp="1619523922319">
+      <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="635" y="139" width="584" height="801" key="find.popup/0.0.1854.1080@0.0.1854.1080" timestamp="1618287702833" />
+    <state x="636" y="139" width="585" height="801" key="find.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1619523922319" />
     <state x="636" y="139" width="585" height="801" key="find.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1615811152400" />
+    <state x="704" y="312" key="refactoring.ChangeSignatureDialog" timestamp="1619523826624">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="704" y="312" key="refactoring.ChangeSignatureDialog/0.0.1857.1080@0.0.1857.1080" timestamp="1619523826624" />
     <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1616996592857">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

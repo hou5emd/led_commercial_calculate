@@ -40,7 +40,7 @@ class ListModules extends React.Component {
             const requestList = await fetch(VARS.URL + 'led-modulis?_where[typeOfProduct]?id=' + VARS.typeOfProductID, {
                 headers: {
                     'Content-Type': 'application/json',
-                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjE2MDg1NDUwLCJleHAiOjE2MTg2Nzc0NTB9.S3iICAYvJlQvcuvzg42mQbqdvCfO4i0qQozz2iFszT4"
+                    "Authorization": VARS.AUTORIZ
                 }
             })
                 .then(checkStatus)
